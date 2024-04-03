@@ -116,6 +116,7 @@ html{
     background-color: var(--c-bg-secondary);
     padding: .5rem;
     border-radius: var(--b-radius-btn);
+    color: var(--c-f-secondary);
 }
 .Form-btn{
     padding: .5rem 1rem; 
