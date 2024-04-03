@@ -70,3 +70,6 @@ Radio 3
 RayBan
 CocaCola
 Milwaukee
+
+# META
+1st edition of the OFFDay Festival. Featuring some of the most relevant names from the current electronic music scene. There will be a day where techno, house, and their variations come to life against during the event. Check out the lineup and get your ticket now!
