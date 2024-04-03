@@ -293,6 +293,10 @@ body{
     grid-template-columns: repeat( 8 , 1fr);
     justify-items: center;
     animation: marquee 7s linear infinite;
+    animation-play-state: paused ;
+}
+.Marquee-ul.isMoving{
+    animation-play-state: running;
 }
 .Marquee-li{
     width: 100%;
