@@ -281,35 +281,38 @@ body{
 }
 .Marquee-wrapper{
     width: 100%;
-    overflow: hidden;
+    padding: 1rem 0;
+    background-color: var(--c-bg-secondary);
 }
 .Marquee-ul{
     width: 200%;
-    padding: 1.5rem 0;
-    font-size: 24px;
+    font-size: 2vw;
+    text-transform: uppercase;
     color: var(--c-f-secondary);
-    background-color: var(--c-bg-secondary);
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat( 8 , 1fr);
+    justify-items: center;
+    animation: marquee 7s linear infinite;
 }
 .Marquee-li{
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
 }
-.Marquee-li::before{
+.Marquee-a{
+    text-align: center;
+}
+
+/* .Marquee-li::before{
     content: "";
     display: block;
     width: .5rem;
     height: .5rem;
     background-color: var(--c-bg-primary);
     border-radius: 50%;
-}
+} */
 .Footer-wrapper{
     padding: 2.5rem 5rem;
     display: flex;
@@ -334,4 +337,12 @@ body{
     justify-content: flex-end;
     align-items: flex-start;
     gap: 5rem;
+}
+@keyframes marquee{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(-50%);
+    }
 }
