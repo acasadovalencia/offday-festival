@@ -274,15 +274,21 @@ body{
 }
 .Images-picture{
     height: 100%;
+    overflow: hidden;
 }
 .Images-img{
     height: 100%;
     object-fit: cover;
+    transition: transform 1s ease;
+}
+.Images-img:hover{
+    transform: scale(1.15);
 }
 .Marquee-wrapper{
     width: 100%;
     padding: 1rem 0;
     background-color: var(--c-bg-secondary);
+    overflow: hidden;
 }
 .Marquee-ul{
     width: 200%;
@@ -308,15 +314,6 @@ body{
 .Marquee-a{
     text-align: center;
 }
-
-/* .Marquee-li::before{
-    content: "";
-    display: block;
-    width: .5rem;
-    height: .5rem;
-    background-color: var(--c-bg-primary);
-    border-radius: 50%;
-} */
 .Footer-wrapper{
     padding: 2.5rem 5rem;
     display: flex;
@@ -324,23 +321,62 @@ body{
     justify-content: space-between;
     align-items: flex-start;
 }
+.Footer-svg{
+    width: 7.375rem
+}
+.Footer-newsletter{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.Footer-form{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .25rem;
+}
+.Form-h4{
+    font-size: 1.0625rem;
+}
 .Form-label{
     display: none;
 }
+.Form-input{
+    background-color: var(--c-bg-secondary);
+    padding: .5rem;
+    border-radius: var(--b-radius-btn);
+}
+.Form-btn{
+    padding: .5rem 1rem; 
+}
 .Social-ul{
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 2.5rem;
 }
-
 .Footer-menu{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: flex-start;
     gap: 5rem;
+}
+.Footer-h5{
+    font-size: 1.5rem;
+}
+.Footer-ul{
+    margin: 1.5rem 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
 }
 @keyframes marquee{
     from{
