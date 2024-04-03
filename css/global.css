@@ -119,6 +119,7 @@ html{
 }
 .Form-btn{
     padding: .5rem 1rem; 
+    cursor: pointer;
 }
 .Social-ul{
     width: 100%;
