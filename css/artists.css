@@ -13,15 +13,14 @@ body{
     grid-template-columns: repeat(4 , 1fr);
     gap: 24px;
     margin: 0 auto;
+    padding: 2.5rem 0 5rem;
     max-width: 1200px;
 }
 .Grid-item{
     position: relative;
 }
 .Grid-picture{
-    width: 282px;
-    height: 282px;
-    background-color: grey;
+    height: 100%;
 }
 .Article-h3{
     position: absolute;
