@@ -115,6 +115,7 @@ body{
 }
 .Footer{
     background-color: var(--c-bg-primary);
+    color: var(--c-f-primary);
 }
 .Footer-wrapper{
     padding: 2.5rem 5rem;
