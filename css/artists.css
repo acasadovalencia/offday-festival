@@ -16,10 +16,16 @@ body{
     max-width: 1200px;
 }
 .Grid-item{
-
+    position: relative;
 }
 .Grid-picture{
     width: 282px;
     height: 282px;
     background-color: grey;
+}
+.Article-h3{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    color: var(--c-f-primary);
 }
