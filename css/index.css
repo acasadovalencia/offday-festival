@@ -1,5 +1,4 @@
 body{
-    font-family: "Oxanium", sans-serif;
     color: var(--c-f-primary);
     background-color: var(--c-bg-primary);
 }
@@ -7,7 +6,7 @@ body{
     width: 100%;
     height: calc(100vh - 4.5rem);
     position: relative;
-    margin: 72px 0 0;
+    margin: var(--mt-fix-header);
 }
 .Main-video{
     object-fit: cover;
@@ -20,16 +19,15 @@ body{
     top: calc(50% - (15.625rem / 2));
     left: calc(50% - (27.5rem / 2));
 }
+.Wrapper{
+    padding: 5rem 5rem;
+}
 .Section-lineup{
     position: relative;
     height: calc(100vh - 4.5rem);
     width: 100%;
 }
-.Wrapper{
-    padding: 5rem 5rem;
-}
 .Section-h2{
-    font-size: 3.25rem;
     text-transform: uppercase;
 }
 .Lineup-wrapper{
@@ -138,14 +136,6 @@ body{
 .Countdown-span:first-child{
     border-bottom: 1px solid #858585;
 }
-/* .Countdown-span:first-child::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--c-divisor);
-    margin: 1rem 0;
-} */
 .Countdown-span:last-child{
     font-size: 1.5rem;
 }

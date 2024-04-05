@@ -1,0 +1,25 @@
+body{
+    background-color: var(--c-bg-secondary);
+    color: var(--c-bg-primary);
+}
+.Wrapper{
+    padding: 2.5rem 5rem;
+}
+.Article-artist{
+    margin: var(--mt-fix-header);
+}
+.Grid-artist{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 24px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.Grid-item{
+
+}
+.Grid-picture{
+    width: 282px;
+    height: 282px;
+    background-color: grey;
+}

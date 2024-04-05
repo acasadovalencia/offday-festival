@@ -41,14 +41,22 @@ html{
     --c-bg-primary: #000;
     --c-bg-secondary: #fff;
     --c-bg-tertiary: #FDF731;
+
     --c-f-primary: #fff;
     --c-f-secondary: #000;
     --c-f-tertiary: #FDF731;
     --c-f-tertiary-h: #FFFC9A;
-    --b-radius-btn: .2rem;
+
     --c-divisor: #858585;
 
+    --mt-fix-header: 4.5rem 0 0;
+    --b-radius-btn: .2rem;
+
+
     font-size: 100%;
+}
+body{
+    font-family: "Oxanium", sans-serif;
 }
 .Header{
     width: 100%;
@@ -81,7 +89,30 @@ html{
 .Menu-svg{
     fill: var(--c-f-secondary);
 }
-
+.H2{
+    font-size: 3.25rem;
+    font-weight: 600;
+}
+.Btn-primary{
+    background-color: var(--c-bg-tertiary);
+    color: #000;
+    transition: background-color .5s ease;
+}
+.Btn-primary:hover{
+    background-color: var(--c-f-tertiary-h);
+}
+.Btn-secondary{
+    background-color: var(--c-bg-secondary);
+    border-radius: var(--b-radius-btn);
+    color: var(--c-f-secondary);
+    transition: background-color .5s ease;
+}
+.Btn-secondary:hover{
+    background-color: var(--c-f-tertiary-h);
+}
+.Footer{
+    background-color: var(--c-bg-primary);
+}
 .Footer-wrapper{
     padding: 2.5rem 5rem;
     display: flex;
@@ -150,21 +181,4 @@ html{
 }
 .Btn{
     border-radius: var(--b-radius-btn);
-}
-.Btn-primary{
-    background-color: var(--c-bg-tertiary);
-    color: #000;
-    transition: background-color .5s ease;
-}
-.Btn-primary:hover{
-    background-color: var(--c-f-tertiary-h);
-}
-.Btn-secondary{
-    background-color: var(--c-bg-secondary);
-    border-radius: var(--b-radius-btn);
-    color: var(--c-f-secondary);
-    transition: background-color .5s ease;
-}
-.Btn-secondary:hover{
-    background-color: var(--c-f-tertiary-h);
 }
