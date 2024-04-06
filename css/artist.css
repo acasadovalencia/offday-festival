@@ -8,6 +8,7 @@ body{
 }
 .Heading-img{
     object-fit: cover;
+    max-height: 60vh;
 }
 .Heading-social{
     width: 100%;

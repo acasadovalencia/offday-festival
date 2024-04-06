@@ -45,7 +45,6 @@ body{
     max-width: 56.5rem;
     font-size: 2rem;
     gap: 2rem;
-    z-index: 1;
 }
 .Lineup-li{
     display: flex;
