@@ -41,14 +41,13 @@ body{
     gap: 6.25rem;
 }
 .Article-text{
+    margin: 0 0 3.25rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
+    max-width: 60%;
 }
-.Article-img{
-    width: 432px;
-    height: 380px;
-    background-color: gray;
+.Article-picture{
 }
