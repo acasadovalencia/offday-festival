@@ -24,7 +24,7 @@ body{
 }
 .Section-lineup{
     position: relative;
-    height: calc(100vh - 4.5rem);
+    min-height: calc(100vh - 4.5rem);
     width: 100%;
 }
 .Section-h2{
