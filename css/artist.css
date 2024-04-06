@@ -48,8 +48,6 @@ body{
     gap: 2rem;
     max-width: 60%;
 }
-.Article-picture{
-}
 .Article-iframe{
     width: 100%;
     height: 70vh;
