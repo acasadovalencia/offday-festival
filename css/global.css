@@ -143,11 +143,13 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
-    transform: translateY(200%);
-    transition: transform 1s ease 1s;
+    transition: transform 1s ease;
 }
-.Nav-ul.isActive{
+.Nav-ul.navUp{
     transform: translateY(0);
+}
+.Nav-ul.navDown{
+    transform: translateY(200%);
 }
 .Background-logo{
     max-width: 43.75rem;
