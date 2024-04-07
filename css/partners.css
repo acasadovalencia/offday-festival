@@ -34,11 +34,4 @@ body{
 .Grid-picture:hover{
     transform: translate(.75rem , -.75rem);
 }
-.Article-h3{
-    position: absolute;
-    bottom: 1.5rem;
-    left: 1.5rem;
-    color: var(--c-f-primary);
-    transition: transform 1s ease;
-    pointer-events: none;
-}
+
