@@ -2,12 +2,13 @@ body{
     background-color: var(--c-bg-secondary);
     color: var(--c-f-secondary);
 }
-.Heading-artist{
+.Heading-work{
     margin: var(--mt-fix-header);
     position: relative;
 }
 .Heading-img{
     object-fit: cover;
+    width: 100%;
 }
 .Heading-social{
     width: 100%;
