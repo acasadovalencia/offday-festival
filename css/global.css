@@ -72,6 +72,7 @@ html{
     --c-bg-primary: #000;
     --c-bg-secondary: #fff;
     --c-bg-tertiary: #FDF731;
+    --c-bg-tertiary-h: #FFFC9A;
 
     --c-f-primary: #fff;
     --c-f-secondary: #000;
@@ -180,7 +181,6 @@ body{
 .Btn-primary{
     background-color: var(--c-bg-tertiary);
     color: #000;
-    transition: background-color .5s ease;
 }
 .Btn-primary:hover{
     background-color: var(--c-f-tertiary-h);

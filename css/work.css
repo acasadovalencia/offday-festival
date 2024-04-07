@@ -80,6 +80,10 @@ body{
     background-color: var(--c-bg-secondary);
     border: 1px solid var(--c-divisor);
     border-radius: var(--b-radius-btn);
+    font-family: "Oxanium", sans-serif;
+}
+.File-wrapper .Work-input:hover::file-selector-button{
+    background-color: var(--c-bg-tertiary-h);
 }
 .File-span{
     font-weight: 400;
@@ -100,4 +104,5 @@ body{
 .Work-btn{
     padding: .375rem 1rem;
     margin: 1.5rem 0 0;
+    cursor: pointer;
 }
