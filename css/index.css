@@ -202,7 +202,44 @@ body{
     text-align: center;
 }
 
+.Slide-wrapper{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--c-bg-tertiary);
+    overflow: hidden;
+}
+.Slide-ul{
+    width: 300%;
+    font-size: 2vw;
+    text-transform: uppercase;
+    color: var(--c-f-secondary);
+    display: grid;
+    grid-template-columns: repeat( 20 , 1fr);
+    justify-items: center;
+    animation: slide 9s linear infinite;
+    animation-play-state: paused ;
+}
+.Slide-ul.isMoving{
+    animation-play-state: running;
+}
+.Slide-li{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @keyframes marquee{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+@keyframes slide{
     from{
         transform: translateX(0)
     }

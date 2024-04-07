@@ -3,6 +3,7 @@
 const lineupLis = document.querySelectorAll('.Lineup-li')
 const lineupImgs = document.querySelectorAll('.Lineup-img')
 const marqueeUl = document.querySelector('.Marquee-ul')
+const slideUl = document.querySelector('.Slide-ul')
 
 lineupLis.forEach( (each , i)=>{
     lineupLis[i].addEventListener('mouseover' , ()=>{
@@ -19,3 +20,6 @@ lineupLis.forEach( (each , i)=>{
 
 marqueeUl.addEventListener('mouseover' , ()=> marqueeUl.classList.remove('isMoving'))
 marqueeUl.addEventListener('mouseout' , ()=> marqueeUl.classList.add('isMoving'))
+
+slideUl.addEventListener('mouseover' , ()=> slideUl.classList.remove('isMoving'))
+slideUl.addEventListener('mouseout' , ()=> slideUl.classList.add('isMoving'))
