@@ -25,7 +25,7 @@ body{
 }
 .Section-lineup{
     position: relative;
-    min-height: calc(100vh - 4.5rem);
+    height: calc(100vh - 4.5rem);
     width: 100%;
 }
 .Section-h2{
@@ -76,7 +76,8 @@ body{
     z-index: -1;
 }
 .Lineup-img{
-    object-fit: cover;
+    object-fit:cover;
+    width: 100%;
     height: 100%;
     opacity: 0;
     transition: opacity .5s ease;
@@ -201,10 +202,9 @@ body{
 .Marquee-a{
     text-align: center;
 }
-
 .Slide-wrapper{
     width: 100%;
-    padding: 1rem 0;
+    padding: 1.625rem 0;
     background-color: var(--c-bg-tertiary);
     overflow: hidden;
 }
