@@ -151,6 +151,9 @@ body{
 .Nav-ul.navDown{
     transform: translateY(200%);
 }
+.Nav-li:hover{
+    color: var(--c-f-tertiary);
+}
 .Background-logo{
     max-width: 43.75rem;
     height: 100%;   
@@ -167,7 +170,7 @@ body{
     font-weight: 600;
 }
 .Menu-svg{
-    fill: var(--c-f-secondary);
+    fill: var(--c-f-primary);
 }
 .Btn{
     border-radius: var(--b-radius-btn);
@@ -194,12 +197,15 @@ body{
     pointer-events: none;
     transition: opacity 1s ease;
 }
+.Menu-btn:hover{
+    fill: var(--c-f-tertiary);
+}
 .Menu-btn.isActive{
     opacity: 1;
     pointer-events: auto;
 }
 .Btn-close{
-    width: 2rem;
+    width: 1.5rem;
     position: fixed;
     top: 1.25rem;
     right: 5rem;
@@ -208,7 +214,10 @@ body{
     opacity: 0;
     pointer-events: none;
     transform: rotate(0);
-    transition: opacity 1s ease, transform 1s linear ;
+    transition: opacity 1s ease, transform 1s linear;
+}
+.Btn-close:hover>path{
+    fill: var(--c-f-tertiary);
 }
 .Btn-close.isActive{
     opacity: 1;
