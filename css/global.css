@@ -238,14 +238,14 @@ body{
     color: var(--c-f-primary);
 }
 .Footer-wrapper{
-    padding: 2.5rem 5rem;
+    padding: 5rem 5rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
 }
 .Footer-svg{
-    width: 7.375rem
+    width: 7.375rem;
 }
 .Footer-newsletter{
     display: flex;
@@ -284,6 +284,9 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 2.5rem;
+}
+.Social-li:hover .Social-a>svg>path{
+        fill: var(--c-bg-tertiary); 
 }
 .Footer-menu{
     display: flex;
