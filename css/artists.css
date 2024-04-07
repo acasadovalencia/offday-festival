@@ -18,7 +18,7 @@ body{
 }
 .Grid-item{
     position: relative;
-    transition: box-shadow 1s ease;
+    transition: box-shadow .8s ease;
 }
 .Grid-item:hover{
     box-shadow: inset 1rem -1rem .25rem 0px rgba(0,0,0,1);
@@ -29,7 +29,7 @@ body{
 .Grid-picture{
     height: 100%;
     border: 1px solid #000;
-    transition: transform 1s ease;
+    transition: transform .8s ease;
 }
 .Grid-picture:hover{
     transform: translate(.75rem , -.75rem);
@@ -44,7 +44,7 @@ body{
     left: 0;
     opacity: 0;
     background-color: var(--c-bg-tertiary);
-    transition: opacity 1s ease;
+    transition: opacity .8s ease;
     pointer-events: none;
 }
 .Grid-picture:hover::after{
@@ -55,6 +55,6 @@ body{
     bottom: 1.5rem;
     left: 1.5rem;
     color: var(--c-f-primary);
-    transition: transform 1s ease;
+    transition: transform .8s ease;
     pointer-events: none;
 }
