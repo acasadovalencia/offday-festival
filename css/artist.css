@@ -29,6 +29,9 @@ body{
     align-items: center;
     gap: 2.5rem;
 }
+.Heading-a:hover path{
+    fill: var(--c-f-tertiary);
+}
 .Wrapper{
     padding: 2.5rem 5rem;
 }
