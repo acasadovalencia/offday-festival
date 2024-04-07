@@ -10,55 +10,94 @@ body{
     object-fit: cover;
     width: 100%;
 }
-.Heading-social{
-    width: 100%;
-    padding: 0 5rem;
-    position: absolute;
-    bottom: 1.5rem;
-    left: 0;
-    color: var(--c-f-primary);
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.Heading-h2{
-    text-shadow: 0px 2px 4px rgba(0,0,0, .6);
-}
-.Heading-ul{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-}
-.Heading-li{
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, .6));
-}
-.Heading-a:hover path{
-    fill: var(--c-f-tertiary);
-}
 .Wrapper{
-    padding: 2.5rem 5rem;
+    padding: 2.5rem 5rem 5rem;
 }
-.Article-wrapper{
-    margin: 2rem 0 2rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 6.25rem;
+.Section-paragraph{
+    margin: 2.5rem 0 0;
 }
-.Article-text{
-    margin: 0 0 3.25rem;
+.Work-form{
+    margin: 2.5rem 0 0;
+}
+.Work-grid{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 1.5rem;
+}
+.Fields-wrapper{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 2rem;
-    max-width: 60%;
 }
-.Article-iframe{
+.Fields-wrapper .Work-label , .Work-input{
     width: 100%;
-    height: 70vh;
+    height: 2rem;
+}
+.Work-label{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;}
+.Work-label::after{
+    content: '*';
+    display: block;
+    font-size: .7rem;
+    color: var(--c-f-required);
+}
+.Work-label:last-child::after{
+    display: none;
+}
+.Work-label:last-child::before{
+    content: '*';
+    display: block;
+    font-size: .7rem;
+    color: var(--c-f-required);
+}
+.Work-input{
+    border: .0625rem solid var(--c-divisor);
+    border-radius: var(--b-radius-btn);
+}
+.Work-input::placeholder{
+    padding: 10rem 10rem;
+}
+.File-wrapper{
+    margin: 1.5rem 0 0;
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+.File-wrapper .Work-input{
+    border: none;
+}
+.File-wrapper .Work-input::file-selector-button{
+    height: 100%;
+    width: 50%;
+    background-color: var(--c-bg-secondary);
+    border: 1px solid var(--c-divisor);
+    border-radius: var(--b-radius-btn);
+}
+.File-span{
+    font-weight: 400;
+    font-size: .6875rem;
+    color: var(--c-f-quaternary);
+}
+.Checkbox-wrapper{
+    margin: 1.5rem 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.Checkbox-wrapper > .Work-input{
+    width: initial;
+}
+.Work-btn{
+    padding: .375rem 1rem;
+    margin: 1.5rem 0 0;
 }
