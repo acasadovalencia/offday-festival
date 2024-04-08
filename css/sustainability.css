@@ -1,0 +1,53 @@
+body{
+    background-color: var(--c-bg-secondary);
+    color: var(--c-f-secondary);
+}
+.Heading-work{
+    margin: var(--mt-fix-header);
+    position: relative;
+}
+.Heading-img{
+    object-fit: cover;
+    width: 100%;
+}
+.Wrapper{
+    padding: 2.5rem 5rem 5rem;
+}
+.Section-article{
+    margin: 2.5rem 0 2.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5rem;
+}
+.Article-svg{
+    width: 1rem;
+    cursor: pointer;
+}
+.Wrapper-img{
+    width: 30%;
+}
+.Article-img{
+    object-fit: cover;
+}
+.Wrapper-texts{
+    width: 70%;
+    margin: 0 0 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.Article-paragraph{
+    line-height: 1.5rem;
+}
+.Selector-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
