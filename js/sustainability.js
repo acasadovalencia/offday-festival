@@ -16,8 +16,8 @@ arrowLeft.addEventListener('click' , () =>{
 
     sliderGrid.style.transform = `translateX(-${(100 / 4) * articleIndex}%)`
 
-    selectorCircles.forEach( (each , index)=>{
-        selectorCircles[index].classList.remove('isActive')
+    selectorCircles.forEach( (each , i)=>{
+        selectorCircles[i].classList.remove('isActive')
     })
 
     selectorCircles[articleIndex].classList.add('isActive')
@@ -34,12 +34,25 @@ arrowRight.addEventListener('click' , ()=>{
     sliderGrid.style.transform = `translateX(-${(100 / 4) * articleIndex}%)`
     console.log(articleIndex)
 
-    selectorCircles.forEach( (each , index)=>{
-        selectorCircles[index].classList.remove('isActive')
+    selectorCircles.forEach( (each , i)=>{
+        selectorCircles[i].classList.remove('isActive')
     })
 
     selectorCircles[articleIndex].classList.add('isActive')
 
+})
+
+selectorCircles.forEach((each , i)=>{
+    selectorCircles[i].addEventListener('click' , ()=>{
+        articleIndex = i
+        sliderGrid.style.transform = `translateX(-${(100 / 4) * articleIndex}%)`
+
+        selectorCircles.forEach((each , i) => {
+            selectorCircles[i].classList.remove('isActive')
+        })
+
+        selectorCircles[articleIndex].classList.add('isActive')
+    })
 })
 
 

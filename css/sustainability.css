@@ -41,7 +41,7 @@ body{
 }
 .Section-article{
     margin: 2.5rem 0 2.5rem;
-    padding: 0 40px;
+    padding: 0 2.5rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -85,11 +85,13 @@ body{
 }
 .Selector-circle{
     transition: fill .5s ease , stroke .5s ease;
+    cursor: pointer;
 }
 .Selector-circle.isActive{
-    cursor: pointer;
     fill: var(--c-bg-tertiary);
     stroke: var(--c-f-secondary);
-    
+}
+.Selector-circle.isActive:hover{
+    fill: var(--c-bg-tertiary);
 }
 
