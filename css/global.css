@@ -155,6 +155,9 @@ body{
 .Nav-ul.navDown{
     transform: translateY(200%);
 }
+.Nav-li{
+    transition: color .5s ease;
+}
 .Nav-li:hover{
     color: var(--c-f-tertiary);
 }
@@ -182,6 +185,7 @@ body{
 .Btn-primary{
     background-color: var(--c-bg-tertiary);
     color: #000;
+    transition: background-color .5s ease;
 }
 .Btn-primary:hover{
     background-color: var(--c-f-tertiary-h);
@@ -198,7 +202,7 @@ body{
 .Menu-btn{
     opacity: 0;
     pointer-events: none;
-    transition: opacity 1s ease;
+    transition: opacity 1s ease , fill .5s ease;
 }
 .Menu-btn:hover{
     fill: var(--c-f-tertiary);
@@ -217,7 +221,7 @@ body{
     opacity: 0;
     pointer-events: none;
     transform: rotate(0);
-    transition: opacity 1s ease, transform 1s linear;
+    transition: opacity 1s ease, transform 1s linear , fill .5s ease;
 }
 .Btn-close:hover>path{
     fill: var(--c-f-tertiary);
@@ -288,8 +292,11 @@ body{
     align-items: center;
     gap: 2.5rem;
 }
+.Social-a>svg>path{
+    transition: fill .5s ease;
+}
 .Social-li:hover .Social-a>svg>path{
-        fill: var(--c-bg-tertiary); 
+    fill: var(--c-bg-tertiary); 
 }
 .Footer-menu{
     display: flex;
@@ -308,4 +315,10 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1.5rem;
+}
+.Footer-li{
+    transition: color .5s ease;
+}
+.Footer-li:hover{
+    color: var(--c-f-tertiary);
 }
