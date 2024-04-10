@@ -2,7 +2,7 @@ body{
     background-color: var(--c-bg-secondary);
     color: var(--c-f-secondary);
 }
-.Heading-work{
+.Heading-sustainability{
     margin: var(--mt-fix-header);
     position: relative;
 }
@@ -88,7 +88,6 @@ body{
 }
 .Selector-circle.isActive{
     fill: var(--c-bg-tertiary);
-    stroke: var(--c-f-secondary);
 }
 .Selector-circle.isActive:hover{
     fill: var(--c-bg-tertiary);
