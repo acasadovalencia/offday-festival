@@ -53,13 +53,12 @@ body{
     cursor: pointer;
 }
 .Wrapper-img{
-    width: 30%;
+    min-width: 30%;
 }
 .Article-img{
     object-fit: cover;
 }
 .Wrapper-texts{
-    width: 70%;
     margin: 0 0 1rem;
     display: flex;
     flex-flow: column nowrap;
