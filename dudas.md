@@ -18,3 +18,15 @@
 
 # Plagio
 - ¿Qué se considera plagio? Imagenes, videos o contenido de otras web (varias) con la indicacion de ello en la memoria. Por ejemplo, utilizar el contenido de sostenibilidad de una web. Imagenes relacionadas con ellos de otras webs para construir tu página. Efectos que se hacen en otras web, trasladarlos a la propia. Video principal de otra web, editando el mismo para utilzar una parte de él. Obviamente, código artesano 100%.
+
+# Meta tags
+- ¿Meta tags identico en todas las páginas o personalizado?
+
+# Edicion CSS de <input type=file>
+
+Como editar el boton que sale por defecto en el navegador así como el texto
+
+# Sin acción <button type='submit'>
+
+Me gustaria simular el submit con un "banner" de completado pero que no ejecute el submit para que no salga de la web.
+
