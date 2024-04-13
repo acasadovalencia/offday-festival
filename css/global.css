@@ -150,6 +150,7 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
+    z-index: 2;
 }
 .Nav-li{
     transition: color .5s ease;
@@ -214,6 +215,8 @@ body{
     position: absolute;
     top: 4.5rem;
     right: 0;
+    z-index: 1;
+    pointer-events: none;
 }
 .H2{
     font-size: 3.25rem;
