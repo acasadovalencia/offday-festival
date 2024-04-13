@@ -69,6 +69,7 @@ html{
     scroll-behavior: smooth;
 }
 :root{
+
     --c-bg-primary: #000;
     --c-bg-secondary: #fff;
     --c-bg-tertiary: #FDF731;
@@ -120,6 +121,8 @@ body{
     width: 2.25rem;
     cursor: pointer;
 }
+
+/* Sale el nav por la derecha al pulsar el menú */
 .Header-nav{
     position: fixed;
     top: 0;
@@ -147,19 +150,63 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
-    transition: transform 1s ease;
-}
-.Nav-ul.navUp{
-    transform: translateY(0);
-}
-.Nav-ul.navDown{
-    transform: translateY(200%);
 }
 .Nav-li{
     transition: color .5s ease;
+    transition: transform 1s ease;
+}
+/* Retardo en el navUp para dar efecto a la salida del menú item a item.*/
+.Li-home.navUp{
+    transition-delay: 0s;
+}
+.Li-artists.navUp{
+    transition-delay: .1s;
+}
+.Li-tickets.navUp{
+    transition-delay: .2s;
+}
+.Li-partners.navUp{
+    transition-delay: .3s;
+}
+.Li-sustainability.navUp{
+    transition-delay: .4s;
+}
+.Li-services.navUp{
+    transition-delay: .5s;
+}
+.Li-work.navUp{
+    transition-delay: .6s;
+}
+/* Retardo en el navDown para dar efecto a la salida del menú item a item. Al salir por abajo, está invertido el delay*/
+.Li-home.navDown{
+    transition-delay: .6s;
+}
+.Li-artists.navDown{
+    transition-delay: .5s;
+}
+.Li-tickets.navDown{
+    transition-delay: .4s;
+}
+.Li-partners.navDown{
+    transition-delay: .3s;
+}
+.Li-sustainability.navDown{
+    transition-delay: .2s;
+}
+.Li-services.navDown{
+    transition-delay: .1s;
+}
+.Li-work.navDown{
+    transition-delay: 0;
 }
 .Nav-li:hover{
     color: var(--c-f-tertiary);
+}
+.Nav-li.navUp{
+    transform: translateY(0);
+}
+.Nav-li.navDown{
+    transform: translateY(150vh);
 }
 .Background-logo{
     max-width: 43.75rem;
