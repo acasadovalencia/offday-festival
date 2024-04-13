@@ -29,9 +29,16 @@ body{
     justify-content: space-between;
     align-items: flex-start;
 }
+.Services-text{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 .Services-h3{
     font-size: 1.5rem;
     padding: 8px 0 0;
+    cursor: pointer;
 }
 .Services-paragraph--wrapper{
     overflow: hidden;
@@ -42,17 +49,19 @@ body{
     top: 0;
     left: 0;
     opacity: 0;
-    height: 0px;
     pointer-events: none;
     transform: translateY(-100%);
-    transition: transform 2s ease , height 2s ease;
+    transition: transform 1s ease , height 2s ease;
 }
 .Services-paragraph.isActive{
     position: relative;
     height: 100%;
     pointer-events: auto;
-    transform: translateY(0);
+    transform: translateY(0%);
     opacity: 1;
+}
+.Services-paragraph--wrapper{
+    height: 100%;
 }
 .Services-icon{
     cursor: pointer;

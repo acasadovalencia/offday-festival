@@ -4,8 +4,10 @@
 const iconDown = document.querySelectorAll('.Icon-svg--down')
 const iconUp = document.querySelectorAll('.Icon-svg--up')
 const servicesParagraph = document.querySelectorAll('.Services-paragraph')
+const servicesH3s = document.querySelectorAll('.Services-h3')
 
-//Añadir listener a .Icon-svg--down para que al hacer click realice:
+
+//Añadir listener a cada .Icon-svg--down para que al hacer click realice:
 iconDown.forEach( (each , i) => {
     iconDown[i].addEventListener('click' , () => {
         servicesParagraph.forEach((each , i) => {
@@ -20,6 +22,7 @@ iconDown.forEach( (each , i) => {
         servicesParagraph[i].classList.add('isActive') //Mostrar .Services-paragraph del index del icono pulsado
     })
 })
+//Añadir listener a cada .Icon-svg--down para que al hacer click realice:
 iconUp.forEach( (each , i) => {
     iconUp[i].addEventListener('click' , () => { 
         servicesParagraph.forEach((each , i) => {
@@ -32,4 +35,24 @@ iconUp.forEach( (each , i) => {
         iconDown[i].classList.add('isActive') //Mostrar .Icon-svg--down
         servicesParagraph[i].classList.remove('isActive') //Mostrar .Services-paragraph del index del icono pulsado
     })
+})
+
+//Añadir listener a cada .Services-h3 para que al hacer click:
+servicesH3s.forEach((each , i) => {
+    servicesH3s[i].addEventListener('click' , () =>{
+        if(servicesParagraph[i].classList.contains('isActive')){    // Si al hacer click, .Services-paragraph está activo
+            servicesParagraph[i].classList.remove('isActive')       // Elimina la clase .isActive de .Services-paragraph
+            iconDown[i].classList.add('isActive')                   // Añade la clase .isActive de .Icon-svg--down
+            iconUp[i].classList.remove('isActive')                  // Elimina la clase .isActive de .Icon-svg--up
+        } else {                                                    // Si no:
+            servicesParagraph.forEach((each , i) => {
+                servicesParagraph[i].classList.remove('isActive')
+                iconDown[i].classList.add('isActive')                   // Añade la clase .isActive de .Icon-svg--down
+                iconUp[i].classList.remove('isActive')                  // Elimina la clase .isActive de .Icon-svg--up
+       
+            })
+        servicesParagraph[i].classList.add('isActive')          // Añade la clase .isActive a .Services-paragraph
+        iconDown[i].classList.remove('isActive')                // Elimina la clase .isActive a .Icon-svg--down
+        iconUp[i].classList.add('isActive')                     // Añade la clase .isActive a .Icon-svg--up
+    }})
 })
