@@ -46,9 +46,9 @@ servicesH3s.forEach((each , i) => {
             iconUp[i].classList.remove('isActive')                  // Elimina la clase .isActive de .Icon-svg--up
         } else {                                                    // Si no:
             servicesParagraph.forEach((each , i) => {
-                servicesParagraph[i].classList.remove('isActive')
-                iconDown[i].classList.add('isActive')                   // Añade la clase .isActive de .Icon-svg--down
-                iconUp[i].classList.remove('isActive')                  // Elimina la clase .isActive de .Icon-svg--up
+                servicesParagraph[i].classList.remove('isActive')   // Elimina la clase .isActive de todos los párrafos
+                iconDown[i].classList.add('isActive')               // Añade la clase .isActive de todos los .Icon-svg--down
+                iconUp[i].classList.remove('isActive')              // Elimina la clase .isActive de todos los .Icon-svg--up
        
             })
         servicesParagraph[i].classList.add('isActive')          // Añade la clase .isActive a .Services-paragraph
