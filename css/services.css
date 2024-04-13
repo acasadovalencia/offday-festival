@@ -5,8 +5,76 @@ body{
 .Wrapper{
     padding: 2.5rem 5rem;
 }
-.Section-partners{
+.Section-services{
     margin: var(--mt-fix-header);
+}
+.Services-container{
+    padding: 2.5rem 0 0;
+}
+.Services-ul{
+    padding: 0 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5rem;
+}
+.Services-li{
+    padding: 0 1rem;
+    width: 100%;
+    border-top: 1px solid var(--c-divisor);
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.Services-h3{
+    font-size: 1.5rem;
+    padding: 8px 0 0;
+}
+.Services-paragraph{
+    padding: .5rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%);
+    z-index: 1;
+}
+.Services-paragraph.isActive{
+    position: relative;
+    pointer-events: auto;
+    transform: translateY(0);
+    opacity: 1;
+}
+.Services-icon{
+    cursor: pointer;
+    position: relative;
+}
+.Icon-svg{
+    width: 1rem;
+    top: calc(1.2188rem - .5rem);
+    right: 0;
+
+    position: absolute;
+}
+.Icon-svg--up{
+    opacity: 0;
+    pointer-events: none;
+}
+.Icon-svg--up.isActive{
+    opacity: 1;
+    pointer-events: auto;
+}
+.Icon-svg--down{
+    opacity: 0;
+    pointer-events: none;
+}
+.Icon-svg--down.isActive{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 
