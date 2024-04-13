@@ -1,0 +1,12 @@
+body{
+    background-color: var(--c-bg-secondary);
+    color: var(--c-f-secondary);
+}
+.Wrapper{
+    padding: 2.5rem 5rem;
+}
+.Section-partners{
+    margin: var(--mt-fix-header);
+}
+
+

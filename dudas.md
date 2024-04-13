@@ -7,7 +7,7 @@
 # Correcto uso del <h1>
 -   Elemento más importante, el logo común de la web. Aparece aviso en las comprobaciones de W3C. ¿Repercute? ¿Debo cambiar la importancia en las paginas?
 
-# Cuenta atras
+# Cuenta atras      
 -   Realizar una cuenta atras que se refresque en el html.
 
 # Transformaciones de un <svg>
