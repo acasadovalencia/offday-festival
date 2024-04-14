@@ -311,6 +311,10 @@ body{
     .Slide-ul{
         width: 650%;
     }
+    .Marquee-ul {
+        width: 400%;
+        font-size: 4vw;
+    }
 }
 @media(max-width:580px){
     .Wrapper{
@@ -348,16 +352,20 @@ body{
     .Large-image{
         grid-column: span 6;
     }
-}
+
 @media(max-width:460px){
     .Slide-ul{
-        width: 750%;
+        width: 800%;
     }
     .Main-logo{
         width: 15rem;
         height: 20rem;
         top: calc(50% - (15rem / 2));
         left: calc(50% - (20rem / 2));
+    }
+    .Marquee-ul {
+        width: 600%;
+        font-size: 6vw;
     }
  
 }
