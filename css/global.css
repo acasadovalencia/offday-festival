@@ -149,7 +149,7 @@ body{
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 3rem;
     z-index: 2;
 }
 .Nav-li{
@@ -210,7 +210,7 @@ body{
     transform: translateY(150vh);
 }
 .Background-logo{
-    max-width: 43.75rem;
+    max-width: 70vw;
     height: 100%;   
     position: absolute;
     top: 4.5rem;
@@ -367,4 +367,33 @@ body{
 }
 .Footer-li:hover{
     color: var(--c-f-tertiary);
+}
+@media (max-width:730px){
+    .Footer-wrapper{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .Footer-newsletter{
+        width: 100%;
+        margin: 0 0 2.5rem;
+        align-items: center
+    }
+    .Social-ul{
+        justify-content: center;
+        gap: 2.5rem;
+    }
+}
+@media (max-width: 580px){
+    .Header{
+        padding: .5rem 1rem;
+    }
+    .Header-nav{
+        padding: 0rem 1rem;
+    }
+    .Btn-close{
+        right: 1.5rem;
+    }
+    .Footer-wrapper{
+        padding: 2.5rem 1.5rem;
+    }
 }

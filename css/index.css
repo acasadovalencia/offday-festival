@@ -83,7 +83,7 @@ body{
     transition: opacity .5s ease;
 }
 .Lineup-img.isActive{
-    opacity: .8;
+    opacity: 1;
 }
 .Lineup-img.isActive .Section-lineup{
     opacity: 0;
@@ -241,8 +241,7 @@ body{
     overflow: hidden;
 }
 .Slide-ul{
-    width: 300%;
-    font-size: 2vw;
+    width: 200%;
     text-transform: uppercase;
     color: var(--c-f-secondary);
     display: grid;
