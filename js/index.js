@@ -60,5 +60,15 @@ function countdown(){
 //Ejecutar la función countdown cada segundo para que se actualice el HTML en relación al tiempo actual.
 setInterval(countdown, 1000)
 
+// const sectionSpecial = document.querySelector('.Section-special')
+// const scrollSlider = document.querySelector('.Scroll-slider')
+
+// window.addEventListener('scroll' , () => {
+//     let pxTop = sectionSpecial.getBoundingClientRect().top
+//     let px = window.scrollY
+//     scrollSlider.style.transform = `translateX(-${pxTop - px}px)`
+//     console.log(pxTop - px)
+// })
+
 
 

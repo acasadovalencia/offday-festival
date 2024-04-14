@@ -218,6 +218,9 @@ body{
     z-index: 1;
     pointer-events: none;
 }
+.H1-span--nd{
+    display: none;
+}
 .H2{
     font-size: 3.25rem;
     font-weight: 600;
@@ -347,13 +350,6 @@ body{
 }
 .Social-li:hover .Social-a>svg>path{
     fill: var(--c-bg-tertiary); 
-}
-.Footer-menu{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 5rem;
 }
 .Footer-h5{
     font-size: 1.5rem;

@@ -205,18 +205,21 @@ body{
 .Marquee-a{
     text-align: center;
 }
+.Section-tickets{
+    background-color: var(--c-bg-primary);
+}
 .Section-special{
     background-color: var(--c-bg-secondary);
     color: var(--c-f-secondary);
     height: 100vh;
+    position: sticky;
+    width: 100%;
 }
 .Scroll-slider{
     margin: 2.5rem 0 0;
     width: 400%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
 
     transform: translateX(0px);
 }
@@ -224,7 +227,7 @@ body{
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
 }
 
