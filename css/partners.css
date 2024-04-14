@@ -34,4 +34,31 @@ body{
 .Grid-picture:hover{
     transform: translate(.75rem , -.75rem);
 }
-
+@media(max-width:880px){
+    .Grid-partners{
+        grid-template-columns: repeat(2, 1fr);
+        align-self: center;
+    }
+}
+@media(max-width:580px){
+    .Wrapper{
+        padding: 2.5rem 1rem;
+    }
+}
+@media(max-width:480px){
+    .Grid-item:hover{
+        box-shadow: none;
+    }
+    .Grid-item:hover .Article-h3{
+        transform: none;
+    }
+    .Grid-picture:hover{
+        transform: none;
+    }
+}
+@media(max-width:400px){
+    .Grid-partners{
+        grid-template-columns: 1fr;
+        align-self: center;
+    }
+}
