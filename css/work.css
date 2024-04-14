@@ -107,3 +107,21 @@ body{
     margin: 1.5rem 0 0;
     cursor: pointer;
 }
+@media(max-width:900px){
+    .File-wrapper{
+        width: 100%;
+    }
+}
+@media(max-width:640px){
+    .Work-grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:580px){
+    .Wrapper{
+        padding: 2.5rem 1rem;
+    }
+    .Checkbox-wrapper > .Work-input{
+        transform: scale(1.7);
+    }
+}

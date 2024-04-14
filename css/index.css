@@ -14,8 +14,8 @@ body{
     opacity: .8;
 }
 .Main-logo{
-    min-width: 27.5rem;
-    min-height: 15.625rem;
+    min-width: 18.75rem;
+    min-height: 9.375rem;
     position: absolute;
     top: calc(50% - (15.625rem / 2));
     left: calc(50% - (27.5rem / 2));
@@ -138,7 +138,7 @@ body{
 }
 .Countdown-span:first-child{
     border-bottom: 1px solid #858585;
-    width: 3.125rem;
+    width: 60%;
 }
 .Countdown-span:last-child{
     font-size: 1.5rem;
@@ -214,6 +214,7 @@ body{
     height: 100vh;
     position: sticky;
     width: 100%;
+    overflow: hidden;
 }
 .Scroll-slider{
     margin: 2.5rem 0 0;
@@ -261,7 +262,6 @@ body{
     align-items: center;
 }
 
-
 @keyframes marquee{
     from{
         transform: translateX(0)
@@ -278,3 +278,98 @@ body{
         transform: translateX(-50%);
     }
 }
+
+@media(max-width:1650px){
+    .Slide-ul{
+        width: 250%;
+    }
+}
+@media(max-width:1480px){
+    .Slide-ul{
+        width: 350%;
+    }
+}
+@media(max-width:1180px){
+    .Slide-ul{
+        width: 450%;
+    }
+}
+@media(max-width:880px){
+    .Slide-ul{
+        width: 550%;
+    }
+}
+@media(max-width:720px){
+    /* .Big-image{
+        grid-column: span 6;
+    }
+    .Landscape-image{
+        grid-column: span 6;
+    } */
+}
+@media(max-width:680px){
+    .Slide-ul{
+        width: 650%;
+    }
+}
+@media(max-width:580px){
+    .Wrapper{
+        padding: 5rem 1rem;
+    }
+    .Countdown-counter {
+        font-size: 1.5rem;
+    } 
+    .Countdown-ul {
+        gap: .5rem;
+    }
+    .Countdown-li{
+        gap: .5rem
+    }
+    .Countdown-li::after{
+        margin: 0;
+    }
+    .Lineup-ul{
+        display: flex;
+        flex-direction: column;
+        padding: 3.625rem 0;
+        max-width: auto;
+        font-size: 2rem;
+        gap: 2rem;
+    }
+    .Section-lineup{
+        height: auto;
+    }
+    .Lineup-li::after{
+        display: none;
+    }
+    .Images-li {
+        grid-column: span 3;
+    }
+    .Large-image{
+        grid-column: span 6;
+    }
+}
+@media(max-width:460px){
+    .Slide-ul{
+        width: 750%;
+    }
+    .Main-logo{
+        width: 15rem;
+        height: 20rem;
+        top: calc(50% - (15rem / 2));
+        left: calc(50% - (20rem / 2));
+    }
+ 
+}
+@media(max-width:420px){
+    .Countdown-ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .Countdown-li::after{
+        display: none;
+    }
+}
+    
