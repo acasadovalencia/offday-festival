@@ -28,7 +28,7 @@ body{
     height: calc(100vh - 4.5rem);
     width: 100%;
 }
-.Section-h2{
+.Lineup-h2{
     text-transform: uppercase;
 }
 .Lineup-wrapper{
@@ -204,6 +204,30 @@ body{
 }
 .Marquee-a{
     text-align: center;
+}
+.Section-special{
+    background-color: var(--c-bg-secondary);
+    color: var(--c-f-secondary);
+    height: 100vh;
+}
+.Scroll-slider{
+    margin: 2.5rem 0 0;
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.Special-wrapper{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.Special-h3{
+    margin: 1.5rem 0 1rem;
 }
 .Slide-wrapper{
     width: 100%;
