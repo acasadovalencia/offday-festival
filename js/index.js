@@ -10,7 +10,6 @@ const countdownHours = document.querySelector('.Countdown-hours')
 const countdownMinutes = document.querySelector('.Countdown-minutes')
 const countdownSeconds = document.querySelector('.Countdown-seconds')
 
-
 //Cuando el mouse entra en .Lineup-li, aplica estilos añadiendo la clase .isActive al .Lineup-li para cambiar su color y a .Lineup-img para volver visible la imagen
 lineupLis.forEach( (each , i)=>{
     lineupLis[i].addEventListener('mouseover' , ()=>{
@@ -34,8 +33,6 @@ slideUl.addEventListener('mouseover' , ()=> slideUl.classList.remove('isMoving')
 slideUl.addEventListener('mouseout' , ()=> slideUl.classList.add('isMoving'))
 
 //Funcion para realizar una cuenta atras hasta la fecha de inicio
-
-
 function countdown(){
     const startDate = new Date('2024-06-16 20:00:00').getTime() //Guardar fecha de inicio del evento
     const actualDate = new Date().getTime() // Guarda la fecha actual
@@ -62,5 +59,6 @@ function countdown(){
 
 //Ejecutar la función countdown cada segundo para que se actualice el HTML en relación al tiempo actual.
 setInterval(countdown, 1000)
+
 
 

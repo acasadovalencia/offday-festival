@@ -217,6 +217,8 @@ body{
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: flex-start;
+
+    transform: translateX(0px);
 }
 .Special-wrapper{
     width: 100%;
