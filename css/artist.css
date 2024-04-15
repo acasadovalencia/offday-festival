@@ -57,8 +57,8 @@ body{
     gap: 2rem;
     width: 70%;
 }
-.Article.profileImage{
-    width: 30%;
+.Article-profileImage{
+    width: 100%;
 }
 .Article-picture{
     display: flex;
@@ -83,8 +83,8 @@ body{
     .Article-text{
         width: 100%;
     }
-    .Article.profileImage{
-        width: 100%;
+    .Article-profileImage{
+        width: initial;
     }
     .Article-iframe{
         height: 50vh;
