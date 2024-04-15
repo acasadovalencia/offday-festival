@@ -383,6 +383,11 @@ body{
         gap: 2.5rem;
     }
 }
+@media(max-width:640px){
+    .H2{
+        font-size: 2.5rem;
+    }
+}
 @media (max-width: 580px){
     .Header{
         padding: .5rem 1rem;

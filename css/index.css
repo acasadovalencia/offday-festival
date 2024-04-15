@@ -25,7 +25,7 @@ body{
 }
 .Section-lineup{
     position: relative;
-    height: calc(100vh - 4.5rem);
+    min-height: calc(100vh - 4.5rem);
     width: 100%;
 }
 .Lineup-h2{
@@ -189,7 +189,7 @@ body{
     display: grid;
     grid-template-columns: repeat( 8 , 1fr);
     justify-items: center;
-    animation: marquee 7s linear infinite;
+    animation: marquee 15s linear infinite;
     animation-play-state: paused ;
 }
 .Marquee-ul.isMoving{
@@ -246,9 +246,10 @@ body{
     text-transform: uppercase;
     color: var(--c-f-secondary);
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat( 20 , 1fr);
     justify-items: center;
-    animation: slide 9s linear infinite;
+    animation: slide 15s linear infinite;
     animation-play-state: paused ;
 }
 .Slide-ul.isMoving{
@@ -281,35 +282,35 @@ body{
 
 @media(max-width:1650px){
     .Slide-ul{
-        width: 250%;
+        width: 400%;
     }
 }
 @media(max-width:1480px){
     .Slide-ul{
-        width: 350%;
+        width: 500%;
     }
 }
 @media(max-width:1180px){
     .Slide-ul{
-        width: 450%;
+        width: 600%;
     }
 }
 @media(max-width:880px){
     .Slide-ul{
-        width: 550%;
+        width: 700%;
     }
 }
 @media(max-width:720px){
-    /* .Big-image{
+    .Big-image{
         grid-column: span 6;
     }
     .Landscape-image{
         grid-column: span 6;
-    } */
+    }
 }
 @media(max-width:680px){
     .Slide-ul{
-        width: 650%;
+        width: 800%;
     }
     .Marquee-ul {
         width: 400%;
@@ -355,7 +356,7 @@ body{
 
 @media(max-width:460px){
     .Slide-ul{
-        width: 800%;
+        width: 900%;
     }
     .Main-logo{
         width: 15rem;
