@@ -30,3 +30,11 @@ Como editar el boton que sale por defecto en el navegador así como el texto
 
 Me gustaria simular el submit con un "banner" de completado pero que no ejecute el submit para que no salga de la web.
 
+# Checkbox en iphone
+
+La casilla checkbo no ajusta su tamaño en iphone, solo en android
+
+# Slider de logos
+
+En android se ve pero en iphone no
+
