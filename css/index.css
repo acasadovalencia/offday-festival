@@ -21,15 +21,15 @@ body {
   left: calc(50% - (27.5rem / 2));
 }
 .Wrapper {
-  padding: 5rem 5rem;
+  padding: 0rem 5rem;
 }
 .Section-lineup {
   position: relative;
   min-height: calc(100vh - 4.5rem);
   width: 100%;
 }
-.Lineup-h2 {
-  text-transform: uppercase;
+.Section-h2{
+  padding: 5rem 0 0;
 }
 .Lineup-wrapper {
   display: flex;
@@ -91,6 +91,7 @@ body {
 .Marquee-wrapper {
   width: 100%;
   padding: 1rem 0;
+  margin: 5rem 0 0;
   background-color: var(--c-bg-secondary);
   overflow: hidden;
 }
@@ -220,6 +221,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
+  padding: 0 0 5rem;
 }
 .Tickets-li{
   display: flex;
@@ -227,9 +229,10 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 2.5rem;
-  padding: 1.5rem 2.5rem;
+  padding: 0 2.5rem;
   background-color: var(--c-bg-primary);
   width: 100%;
+  position: relative;
 }
 .Tickets-wrapper{
   display: flex;
@@ -237,30 +240,51 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 5rem;
+  z-index: 1;
 }
 .Tickets-svg{
-  width: 199px;
-  height: 90px;
-  background-color: red;
-  padding: 2.5469rem 0;
+  width: 7.75rem;
 }
 .Tickets-text{
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-.Tickets-h3{
-  margin: 0 0 .625rem;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.875rem 0;
 }
 .Tickets-price{
-  margin: .625rem 0 0;
   font-size: 2rem;
+  font-weight: 600;
 }
 .Tickets-btn{
   padding: .375rem 1rem;
   font-size: .875rem;
+  z-index: 1;
 }
+.Tickets-picture{
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+}
+.Tickets-picture::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,.2));
+}
+.Tickets-img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 /* .Section-special {
   background-color: var(--c-bg-secondary);
   color: var(--c-f-secondary);
