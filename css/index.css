@@ -21,16 +21,14 @@ body {
   left: calc(50% - (27.5rem / 2));
 }
 .Wrapper {
-  padding: 0rem 5rem;
+  padding: 5rem;
 }
 .Section-lineup {
   position: relative;
   min-height: calc(100vh - 4.5rem);
   width: 100%;
 }
-.Section-h2{
-  padding: 5rem 0 0;
-}
+
 .Lineup-wrapper {
   display: flex;
   flex-flow: column nowrap;
@@ -91,7 +89,6 @@ body {
 .Marquee-wrapper {
   width: 100%;
   padding: 1rem 0;
-  margin: 5rem 0 0;
   background-color: var(--c-bg-secondary);
   overflow: hidden;
 }
@@ -221,7 +218,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
-  padding: 0 0 5rem;
 }
 .Tickets-li{
   display: flex;
@@ -306,9 +302,7 @@ body {
   height: 100%;
   position: relative;
 }
-.Container-special{
-  padding: 5rem 5rem;
-}
+
 .Special-h2{
   padding: 0 0 5rem;
 }
@@ -412,20 +406,74 @@ body {
     width: 400%;
   }
 }
-@media (max-width: 880px) {
+@media (max-width:1090px){
+  .Tickets-li{
+    gap: 1rem;
+  }
+  .Tickets-wrapper{
+    gap: 1rem;
+  }
+  .Tickets-h3{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .Tickets-price{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 882px) {
+  .Tickets-ul{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+  }
+  .Tickets-li{
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem 1.5rem;
+  }
+  .Tickets-li::after{
+    display: none;
+  }
+  .Tickets-svg{
+    width: 10rem;
+  }
+  .Tickets-wrapper{
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .Tickets-text{
+    flex-direction: column;
+  }
+  .Tickets-picture::after{
+    background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,.2));
+  }
   .Slide-ul {
     width: 500%;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 740px) {
   .Big-image {
     grid-column: span 6;
   }
   .Landscape-image {
     grid-column: span 6;
   }
+  .Tickets-ul{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .Tickets-li{
+    width: 50%;
+  }
 }
+
 @media (max-width: 680px) {
+  .Wrapper{
+    padding: 2.5rem 5rem;
+  }
+  .Lineup-ul{
+    padding: 5rem 0;
+  }
   .Slide-ul {
     width: 600%;
   }
@@ -433,10 +481,19 @@ body {
     width: 400%;
     font-size: 4vw;
   }
+  .Tickets-h2{
+    padding: 0 0 2.5rem;
+    margin: 0;
+  }
+
+  .Tickets-li{
+    width: 70%;
+  }
+
 }
 @media (max-width: 580px) {
   .Wrapper {
-    padding: 5rem 1rem;
+    padding: 2.5rem 1rem;
   }
   .Countdown-counter {
     font-size: 1.5rem;
@@ -470,7 +527,15 @@ body {
   .Large-image {
     grid-column: span 6;
   }
-
+  .Tickets-li{
+    width: 100%;
+  }
+  .Tickets-h3{
+    font-size: 2rem;
+  }
+  .Tickets-price{
+    font-size: 2rem;
+  }
   @media (max-width: 460px) {
     .Slide-ul {
       width: 800%;
@@ -485,6 +550,17 @@ body {
       width: 600%;
       font-size: 6vw;
     }
+  }
+  @media(max-width:400px){
+    .Tickets-h3{
+      font-size: 1.5rem;
+    }
+    .Tickets-price{
+      font-size: 1.5rem;
+    }
+    .Countdown-span:last-child {
+      font-size: 1rem;
+  }
   }
   /* @media(max-width:420px){
     .Countdown-ul {
