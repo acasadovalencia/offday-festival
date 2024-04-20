@@ -3,9 +3,66 @@ body{
     color: var(--c-f-secondary);
 }
 .Wrapper{
-    padding: 2.5rem 5rem;
+    padding: 2.5rem 5rem 5rem;
 }
 .Section-tickets{
     margin: var(--mt-fix-header);
     min-height: calc(100vh - 4.5rem);
+}
+.Tickets-paragraph{
+    padding: 2.5rem 0rem ;
+}
+.Tickets-icons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 5rem;
+}
+.Icons-li{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Tickets-svg{
+    width: 5.4375rem;
+    height: 2.8125rem;
+    transform: rotate(-15deg);
+    margin: 0 0 .75rem;
+}
+.Tickets-h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.Description-li{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    margin: 2rem 0 0;
+}
+.Description-picture{
+    width: 50%;
+}
+.Description-image{
+    object-fit: cover;
+}
+.Description-text{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .625rem;
+    width: 50%;
+}
+.Description-price{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.Tickets-btn{
+    padding: .375rem 1rem;
+    font-size: .875rem;
 }
