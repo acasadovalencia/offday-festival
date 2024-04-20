@@ -64,9 +64,24 @@ body{
 .Services-paragraph.isActive{
     position: relative;
     pointer-events: auto;
-    transform: translateY(0%);
+    /* transform: translateY(0%); */
     opacity: 1;
     max-height: 1000px;
+}
+.Services-p-li{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+.Services-p-li::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--c-f-secondary);
 }
 .Services-icon{
     cursor: pointer;
