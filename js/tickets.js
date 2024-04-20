@@ -13,7 +13,7 @@ iconsLis.forEach((each , i) => {
             descriptionLis[i].classList.remove('isActive')
             ticketsSvgs[i].classList.remove('isActive')
         })
-        iconsLis[i].classList.add('isActive')                   //Añadir la clase isActive solo al elemento pulsado
+        iconsLis[i].classList.add('isActive')                   //Añadir la clase isActive solo al elemento pulsado y al .Description-li que tenga el mismo índice.
         ticketsSvgs[i].classList.add('isActive')
         descriptionLis[i].classList.add('isActive')
     })
