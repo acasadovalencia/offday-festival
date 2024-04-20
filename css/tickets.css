@@ -25,6 +25,7 @@ body{
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
+    cursor: pointer;
 }
 .Tickets-svg{
     width: 5.4375rem;
@@ -32,17 +33,49 @@ body{
     transform: rotate(-15deg);
     margin: 0 0 .75rem;
 }
+.Tickets-svg.isActive .Path-bg{
+    fill: var(--c-bg-tertiary);
+}
+.Tickets-svg.isActive .Path-line{
+    fill: var(--c-bg-primary);
+}
 .Tickets-h3{
     font-weight: 600;
     font-size: 1.5rem;
+}
+.Tickets-h3::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--c-f-secondary);
+    margin: 0 auto;
+    transition: width .5s ease;
+}
+.Icons-li.isActive .Tickets-h3::after{
+    width: 50%;
+}
+.Tickets-description{
+    position: relative;
+    margin: 2.5rem 0 0;
 }
 .Description-li{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 2.5rem;
-    margin: 2rem 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.Description-li.isActive{
+    opacity: 1;
+}
+.Description-li:first-child{
+    position: static;
 }
 .Description-picture{
     width: 50%;
