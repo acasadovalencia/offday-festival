@@ -38,9 +38,6 @@ body{
 .Heading-a:hover path{
     fill: var(--c-f-tertiary);
 }
-.Wrapper{
-    padding: 2.5rem 5rem;
-}
 .Article-wrapper{
     margin: 2rem 0 2rem;
     display: flex;

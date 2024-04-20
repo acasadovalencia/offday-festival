@@ -2,9 +2,6 @@ body{
     background-color: var(--c-bg-secondary);
     color: var(--c-f-secondary);
 }
-.Wrapper{
-    padding: 2.5rem 5rem 5rem;
-}
 .Heading-img{
     object-fit: cover;
     width: 100%;

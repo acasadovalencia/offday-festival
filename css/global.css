@@ -229,6 +229,9 @@ body{
     font-size: 2rem;
     font-weight: 600;
 }
+.Wrapper {
+    padding: 2.5rem 5rem 5rem;
+  }
 .Menu-svg{
     fill: var(--c-f-primary);
 }
