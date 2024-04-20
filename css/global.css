@@ -82,6 +82,7 @@ html{
     --c-f-tertiary-h: #FFFC9A;
     --c-f-quaternary: #505D66;
     --c-f-required: #A73535;
+    --c-f-copy: #c5c5c5;
 
     --c-divisor: #858585;
 
@@ -374,7 +375,7 @@ body{
     align-items: flex-end;
     font-size: .75rem;
     font-weight: 300;
-    color: var(--c-f-quaternary);
+    color: var(--c-f-copy);
     padding: 0 0 .5rem;
 }
 @media (max-width:730px){
