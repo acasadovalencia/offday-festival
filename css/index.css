@@ -240,13 +240,13 @@ body {
   content: "";
   display: block;
   width: 200%;
-  height: 5px;
+  height: .3125rem;
   background-color: var(--c-bg-secondary);
   position: absolute;
-  top:-400px;
-  left: -100px;
+  top:-25rem;
+  left: -6.25rem;
   transform: rotate(-15deg);
-  filter: blur(10px);
+  filter: blur(.625rem);
   transition: top .3s linear;
 
 }
@@ -254,7 +254,7 @@ body {
   transform: scale(1.05);  
 }
 .Tickets-li:hover::after{
-  top:130px;
+  top: 8.125rem;
 }
 .Tickets-wrapper{
   display: flex;
@@ -454,7 +454,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 3.625rem 0;
-    max-width: auto;
+    width: auto;
     font-size: 2rem;
     gap: 2rem;
   }
