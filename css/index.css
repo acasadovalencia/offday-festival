@@ -233,6 +233,28 @@ body {
   background-color: var(--c-bg-primary);
   width: 100%;
   position: relative;
+  overflow: hidden;
+  transition: transform .3s ease;
+}
+.Tickets-li::after{
+  content: "";
+  display: block;
+  width: 200%;
+  height: 5px;
+  background-color: var(--c-bg-secondary);
+  position: absolute;
+  top:-400px;
+  left: -100px;
+  transform: rotate(-15deg);
+  filter: blur(10px);
+  transition: top .3s linear;
+
+}
+.Tickets-li:hover{
+  transform: scale(1.05);  
+}
+.Tickets-li:hover::after{
+  top:130px;
 }
 .Tickets-wrapper{
   display: flex;
