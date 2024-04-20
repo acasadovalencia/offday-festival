@@ -111,9 +111,4 @@ body{
         display: none;
     }
 }
-@media(max-width:580px){
-    .Wrapper{
-        padding: 2.5rem 1rem;
-    }
-}
 

@@ -409,6 +409,9 @@ body{
     .Header{
         padding: .5rem 1rem;
     }
+    .Wrapper{
+        padding: 2.5rem 1rem;
+    }
     .Header-nav{
         padding: 0rem 1rem;
     }

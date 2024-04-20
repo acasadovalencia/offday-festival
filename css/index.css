@@ -501,9 +501,6 @@ body {
   }
 }
 @media (max-width: 580px) {
-  .Wrapper {
-    padding: 2.5rem 1rem;
-  }
   .Countdown-counter {
     font-size: 1.5rem;
   }

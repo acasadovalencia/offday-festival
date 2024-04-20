@@ -73,9 +73,6 @@ body{
     .Article-h3{
         font-size: 1.75rem;
     }
-    .Wrapper{
-        padding: 2.5rem 1rem;
-    }
     .Grid-item:hover{
         box-shadow: none;
     }
