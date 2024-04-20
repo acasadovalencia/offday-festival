@@ -8,9 +8,6 @@ body{
 .Heading-services{
     margin: var(--mt-fix-header);
 }
-.Section-services{
-    min-height: calc(100vh - 4.5rem);
-}
 .Services-container{
     width: 100%;
     padding: 2.5rem 0 0;
@@ -112,5 +109,21 @@ body{
     opacity: 1;
     pointer-events: auto;
 }
-
+@media(max-width:580px){
+    .Wrapper{
+        padding: 2.5rem 1rem;
+    }
+    .Services-ul{
+        padding: 0;
+    }
+    .Icon-svg{
+        width: 2rem;
+        top: calc(1.2188rem - 1rem);
+    }
+}
+@media(max-width:380px){
+    .Services-h3{
+        font-size: 1rem;
+    }
+}
 

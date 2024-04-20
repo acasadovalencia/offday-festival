@@ -101,7 +101,6 @@ body{
         overflow-y: hidden;    
         width: 375%;
         gap: 2.5rem
-
 }
     .Section-article{
         flex-direction: column;

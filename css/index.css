@@ -527,6 +527,9 @@ body {
   .Section-lineup {
     height: auto;
   }
+  .Lineup-picture{
+    display: none;
+  }
   .Lineup-li::after {
     display: none;
   }

@@ -367,6 +367,16 @@ body{
 .Footer-li:hover{
     color: var(--c-f-tertiary);
 }
+.Span-copy{
+    display: flex;
+    flex-flow: row row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: .75rem;
+    font-weight: 300;
+    color: var(--c-f-quaternary);
+    padding: 0 0 .5rem;
+}
 @media (max-width:730px){
     .Footer-wrapper{
         display: flex;
