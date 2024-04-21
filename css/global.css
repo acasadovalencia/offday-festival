@@ -404,8 +404,11 @@ body{
         font-size: 1.75rem;
         font-weight: 600;
     }
+    .Wrapper{
+        padding: 2.5rem 5rem;
+    }
 }
-@media (max-width: 580px){
+@media(max-width:580px){
     .Header{
         padding: .5rem 1rem;
     }

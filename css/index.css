@@ -20,9 +20,7 @@ body {
   top: calc(50% - (15.625rem / 2));
   left: calc(50% - (27.5rem / 2));
 }
-.Wrapper {
-  padding: 5rem;
-}
+
 .Section-lineup {
   position: relative;
   min-height: calc(100vh - 4.5rem);
@@ -476,9 +474,7 @@ body {
   }
 }
 @media (max-width: 680px) {
-  .Wrapper{
-    padding: 2.5rem 5rem;
-  }
+
   .Lineup-ul{
     padding: 5rem 0;
   }
@@ -516,13 +512,16 @@ body {
   .Lineup-ul {
     display: flex;
     flex-direction: column;
-    padding: 3.625rem 0;
+    padding: 2.5rem 0 5rem;
     width: auto;
     font-size: 2rem;
     gap: 2rem;
   }
   .Section-lineup {
     height: auto;
+  }
+  .Lineup-wrapper{
+    padding: 0 0 2.5rem;
   }
   .Lineup-picture{
     display: none;
@@ -545,7 +544,7 @@ body {
   .Tickets-price{
     font-size: 2rem;
   }
-  @media (max-width: 460px) {
+  @media(max-width:460px) {
     .Slide-ul {
       width: 800%;
     }
