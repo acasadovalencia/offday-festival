@@ -97,6 +97,61 @@ body{
     padding: .375rem 1rem;
     font-size: .875rem;
 }
+.Modal-tickets{
+    position: fixed;
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Modal-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c-bg-secondary);
+    padding: 1.5rem;
+    border: 1px solid var(--c-bg-quaternary);
+}
+.Modal-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Modal-svg{
+    align-self: flex-end;
+    width: 1rem;
+    cursor: pointer;
+}
+.Modal-svg > path{
+    fill: var(--c-f-quaternary);
+}
+.Modal-picture{
+    width: 25%;
+    margin: 0 0 1rem;
+}
+.Modal-text{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.Modal-heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.Modal-description{
+    max-width: 480px;
+    text-align: center;
+}
 @keyframes sliderAlert{
     0%{
         transform: translateY(0);
