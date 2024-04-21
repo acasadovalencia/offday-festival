@@ -372,10 +372,13 @@ body {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   justify-items: center;
+  -webkit-animation: slide 15s linear infinite;
+  -webkit-animation-play-state: paused;
   animation: slide 15s linear infinite;
   animation-play-state: paused;
 }
 .Slide-ul.isMoving {
+  -webkit-animation-play-state: running;
   animation-play-state: running;
 }
 .Slide-li {
@@ -385,7 +388,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 @keyframes marquee {
   from {
     transform: translateX(0);
