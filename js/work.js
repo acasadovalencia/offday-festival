@@ -1,8 +1,10 @@
+(function(){
 'use strict'
 
 //Selección de elementos del HTML
+const modalTickets = document.querySelector('.Modal-tickets')
+const modalBtn = document.querySelector('.Modal-btn')
 const workForm = document.querySelector('.Work-form')
-
 
 //Crear función común
 const closeModal = () =>{
@@ -26,3 +28,4 @@ document.addEventListener('keydown' , (e) => {
         closeModal()
     }
 })
+})()
