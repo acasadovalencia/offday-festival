@@ -5,6 +5,9 @@ const btnClose = document.querySelector('.Btn-close')
 const headerNav = document.querySelector('.Header-nav')
 const btnTickets = document.querySelector('.Btn-tickets')
 const navLis = document.querySelectorAll('.Nav-li')
+const modalTickets = document.querySelector('.Modal-tickets')
+const modalBtn = document.querySelector('.Modal-btn')
+const footerForm = document.querySelector('.Footer-form')
 
 //Funcion para cerrar el menú
 const closeMenu = function(){
@@ -51,4 +54,21 @@ document.addEventListener('keydown' , (e) => {
     if(e.key === 'Escape'){
         closeMenu()
     }
+})
+
+//Añadir a cada Btn de compra un listener
+footerForm.addEventListener('submit' , (e) => {
+    e.preventDefault()
+    modalTickets.classList.add('isOpen')
+})
+
+modalBtn.addEventListener('click' , () =>{      //Cerrar el modal con el boton de cierre
+    closeModal()
+})
+
+//Cerrar el modal tambien con la tecla Esc
+document.addEventListener('keydown' , (e) => {
+if(e.key === 'Escape'){
+    closeModal()
+}
 })

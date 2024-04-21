@@ -10,6 +10,11 @@ const countdownHours = document.querySelector('.Countdown-hours')
 const countdownMinutes = document.querySelector('.Countdown-minutes')
 const countdownSeconds = document.querySelector('.Countdown-seconds')
 
+
+const closeModal = () =>{
+    modalTickets.classList.remove('isOpen')
+}
+
 //Cuando el mouse entra en .Lineup-li, aplica estilos añadiendo la clase .isActive al .Lineup-li para cambiar su color y a .Lineup-img para volver visible la imagen
 lineupLis.forEach( (each , i)=>{
     lineupLis[i].addEventListener('mouseover' , ()=>{
@@ -59,6 +64,9 @@ function countdown(){
 
 //Ejecutar la función countdown cada segundo para que se actualice el HTML en relación al tiempo actual.
 setInterval(countdown, 1000)
+
+
+
 
 // const sectionSpecial = document.querySelector('.Section-special')
 // const scrollSlider = document.querySelector('.Scroll-slider')

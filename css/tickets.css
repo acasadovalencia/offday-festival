@@ -67,10 +67,12 @@ body{
     top: 0;
     left: 0;
     opacity: 0;
+    pointer-events: none;
     transition: opacity 1s ease;
 }
 .Description-li.isActive{
     opacity: 1;
+    pointer-events: auto;
 }
 .Description-li:first-child{
     position: static;
@@ -97,76 +99,6 @@ body{
     padding: .375rem 1rem;
     font-size: .875rem;
     cursor: pointer;
-}
-.Modal-tickets{
-    position: fixed;
-    opacity: 0;
-    pointer-events: none;
-    -web-kit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 4;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    transition: opacity .5s ease;
-}
-.Modal-tickets.isOpen{
-    opacity: 1;
-    pointer-events: auto;
-}
-.Modal-container{    
-    margin: 0 1rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--c-bg-secondary);
-    padding: 1.5rem;
-    border: 1px solid var(--c-bg-quaternary);
-    border-radius: 1rem;
-    transform: scale(0);
-    transition: transform .5s cubic-bezier(.45,-0.19,.51,1.58);
-}
-.Modal-tickets.isOpen .Modal-container{
-    transform: scale(1);
-}
-.Modal-wrapper{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.Modal-svg{
-    align-self: flex-end;
-    width: 1rem;
-    cursor: pointer;
-}
-.Modal-svg > path{
-    fill: var(--c-f-quaternary);
-}
-.Modal-picture{
-    width: 25%;
-    margin: 0 0 1rem;
-}
-.Modal-text{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-}
-.Modal-heading{
-    font-size: 2rem;
-    font-weight: 600;
-}
-.Modal-description{
-    max-width: 480px;
-    text-align: center;
 }
 @keyframes sliderAlert{
     0%{
