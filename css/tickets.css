@@ -96,9 +96,12 @@ body{
 .Tickets-btn{
     padding: .375rem 1rem;
     font-size: .875rem;
+    cursor: pointer;
 }
 .Modal-tickets{
     position: fixed;
+    opacity: 0;
+    pointer-events: none;
     backdrop-filter: blur(5px);
     height: 100vh;
     width: 100%;
@@ -109,6 +112,11 @@ body{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    transition: opacity .5s ease;
+}
+.Modal-tickets.isOpen{
+    opacity: 1;
+    pointer-events: auto;
 }
 .Modal-container{
     display: flex;
@@ -118,6 +126,12 @@ body{
     background-color: var(--c-bg-secondary);
     padding: 1.5rem;
     border: 1px solid var(--c-bg-quaternary);
+    border-radius: 1rem;
+    transform: scale(0);
+    transition: transform .5s cubic-bezier(.45,-0.19,.51,1.58);
+}
+.Modal-tickets.isOpen .Modal-container{
+    transform: scale(1);
 }
 .Modal-wrapper{
     display: flex;

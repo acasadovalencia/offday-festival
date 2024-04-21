@@ -4,6 +4,14 @@
 const iconsLis = document.querySelectorAll('.Icons-li')
 const ticketsSvgs = document.querySelectorAll('.Tickets-svg')
 const descriptionLis = document.querySelectorAll('.Description-li')
+const modalTickets = document.querySelector('.Modal-tickets')
+const modalBtn = document.querySelector('.Modal-btn')
+const ticketsBtns = document.querySelectorAll('.Tickets-btn--checkout')
+
+//Crear función común
+const closeModal = () =>{
+    modalTickets.classList.remove('isOpen')
+}
 
 //Añadir listener para cada elemento con interacción
 iconsLis.forEach((each , i) => {
@@ -17,4 +25,24 @@ iconsLis.forEach((each , i) => {
         ticketsSvgs[i].classList.add('isActive')
         descriptionLis[i].classList.add('isActive')
     })
+})
+//Añadir a cada Btn de compra un listener
+ticketsBtns.forEach((each , i) => {
+    ticketsBtns[i].addEventListener('click' , () => {
+        modalTickets.classList.add('isOpen')
+        setTimeout( () => {                         //Cerrar el modal pasado un tiempo aunque no se pulse el btn de cierre
+            closeModal()
+    }, 6000)
+    })
+})
+
+modalBtn.addEventListener('click' , () =>{      //Cerrar el modal con el boton de cierre
+        closeModal()
+})
+
+//Cerrar el modal tambien con la tecla Esc
+document.addEventListener('keydown' , (e) => {
+    if(e.key === 'Escape'){
+        closeModal()
+    }
 })
