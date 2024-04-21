@@ -11,7 +11,7 @@ let articleIndex = 0
 
 
 arrowLeft.addEventListener('click' , () =>{                                     //Listener para el boton izquierdo
-    articleIndex--                                                              // Decrementa el índice al pulsarlo
+    articleIndex--                                                              //Decrementa el índice al pulsarlo
 
     if(articleIndex < 0){                                                       //Condición para que nunca muestre index negativo. Del item 1, pasa al 4.
         articleIndex = 3;
