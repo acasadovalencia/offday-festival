@@ -13,6 +13,13 @@ const closeModal = () =>{
     modalTickets.classList.remove('isOpen')
 }
 
+const autoClose = (time) =>{                    //Utilizar el parametro time para introducir el tiempo en cada iteraccion
+    setTimeout( () => {                         //Cerrar el modal pasado un tiempo aunque no se pulse el btn de cierre
+        closeModal()
+}, time)
+}
+
+
 //Añadir listener para cada elemento con interacción
 iconsLis.forEach((each , i) => {
     iconsLis[i].addEventListener('click' , () =>{
@@ -30,19 +37,19 @@ iconsLis.forEach((each , i) => {
 ticketsBtns.forEach((each , i) => {
     ticketsBtns[i].addEventListener('click' , () => {
         modalTickets.classList.add('isOpen')
-        setTimeout( () => {                         //Cerrar el modal pasado un tiempo aunque no se pulse el btn de cierre
-            closeModal()
-    }, 6000)
+        autoClose(6000)                                         //Llamar la función timeout si no se cierra el modal
     })
 })
 
 modalBtn.addEventListener('click' , () =>{      //Cerrar el modal con el boton de cierre
         closeModal()
+        autoClose(0)                            //Resetear el timeout utilizando el argumento para que no se siga ejecutando por "detras" y quede limpio para el siguiente click
 })
 
 //Cerrar el modal tambien con la tecla Esc
 document.addEventListener('keydown' , (e) => {
     if(e.key === 'Escape'){
         closeModal()
+        autoClose(0)                            //Resetear el timeout utilizando el argumento para que no se siga ejecutando por "detras" y quede limpio para el siguiente click
     }
 })
