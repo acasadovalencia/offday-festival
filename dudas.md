@@ -34,7 +34,7 @@ Me gustaria simular el submit con un "banner" de completado pero que no ejecute 
 
 La casilla checkbo no ajusta su tamaño en iphone, solo en android
 
-# Slider de logos
+# IFFE 
 
-En android se ve pero en iphone no
+'use strict' dentro o fuera de IFFE
 
