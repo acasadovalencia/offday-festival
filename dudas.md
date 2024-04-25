@@ -42,3 +42,4 @@ La casilla checkbo no ajusta su tamaño en iphone, solo en android
 
 Al usar type="img/webp" da error indicando no usarlo en la etiqueta img. En clase vimos que se ponia.
 
+# Evitar traducción de la página
