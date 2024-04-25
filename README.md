@@ -1,4 +1,4 @@
-<div align="center">
+
 <h1>OFFDay Festival website project</h1>
 <h2>Esta web ha sido creada como proyecto final para el módulo Diseño web con HTML, CSS y JavaScript en la escuela CEI.</h2>
 
