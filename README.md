@@ -2,7 +2,7 @@
 <h1>OFFDay Festival website project</h1>
 <h2>Esta web ha sido creada como proyecto final para el módulo Diseño web con HTML, CSS y JavaScript en la escuela CEI.</h2>
 
-<img src="assets/img/meta-logo.png" alt="OFFDay logo" width="424" height="209" style="border-radius=2px"/>
+<img src="assets/img/meta-logo.png" alt="OFFDay logo" width="424" height="209"/>
 
 <h3>Tecnologías utilizadas</h3>
     <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
