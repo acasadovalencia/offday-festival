@@ -32,7 +32,7 @@ Me gustaria simular el submit con un "banner" de completado pero que no ejecute 
 
 # Checkbox en iphone
 
-La casilla checkbo no ajusta su tamaño en iphone, solo en android
+La casilla checkbok no ajusta su tamaño en iphone, solo en android
 
 # IFFE 
 
@@ -43,3 +43,7 @@ La casilla checkbo no ajusta su tamaño en iphone, solo en android
 Al usar type="img/webp" da error indicando no usarlo en la etiqueta img. En clase vimos que se ponia.
 
 # Evitar traducción de la página
+
+# Error en un form con el label
+
+Al ocultarlo, da error en wave
