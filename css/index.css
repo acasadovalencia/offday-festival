@@ -520,6 +520,9 @@ body {
   .Large-image {
     grid-column: span 6;
   }
+  .Section-tickets--wrapper{
+    padding: 2.5rem 1rem;
+}
   .Tickets-li{
     width: 100%;
   }
