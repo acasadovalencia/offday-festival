@@ -331,34 +331,6 @@ body {
   gap: 1rem;
   width: 90%;
 }
-
-/* .Section-special {
-  background-color: var(--c-bg-secondary);
-  color: var(--c-f-secondary);
-  height: 100vh;
-  position: sticky;
-  width: 100%;
-  overflow: hidden;
-} */
-/* .Scroll-slider {
-  margin: 2.5rem 0 0;
-  width: 400%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  transform: translateX(0px);
-} */
-/* .Special-wrapper {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: flex-start;
-} */
-
-/* .Special-h3 {
-  margin: 1.5rem 0 1rem;
-} */
 .Slide-wrapper {
   width: 100%;
   padding: 1.625rem 0;
