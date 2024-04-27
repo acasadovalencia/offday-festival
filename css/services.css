@@ -2,6 +2,9 @@ body{
     background-color: var(--c-bg-secondary);
     color: var(--c-f-secondary);
 }
+.Heading-img{
+    max-height: 60vh;
+}
 .Heading-services{
     margin: var(--mt-fix-header);
 }
