@@ -296,7 +296,7 @@ body{
     opacity: 1;
     pointer-events: auto;
 }
-.Modal-tickets{
+.Modal-suscribe{
     position: fixed;
     opacity: 0;
     pointer-events: none;
@@ -314,7 +314,7 @@ body{
     align-items: center;
     transition: opacity .5s ease;
 }
-.Modal-tickets.isOpen{
+.Modal-suscribe.isOpen{
     opacity: 1;
     pointer-events: auto;
 }
@@ -331,7 +331,7 @@ body{
     transform: scale(0);
     transition: transform .5s cubic-bezier(.45,-0.19,.51,1.58);
 }
-.Modal-tickets.isOpen .Modal-container{
+.Modal-suscribe.isOpen .Modal-container{
     transform: scale(1);
 }
 .Modal-wrapper{

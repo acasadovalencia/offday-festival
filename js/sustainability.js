@@ -1,5 +1,5 @@
+'use strict';
 (function(){
-    'use strict'
     //Selección de elementos del HTML
     const arrowLeft = document.querySelector('.Slider-arrow--left')
     const arrowRight = document.querySelector('.Slider-arrow--right')

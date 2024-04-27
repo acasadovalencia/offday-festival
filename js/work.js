@@ -1,24 +1,22 @@
+'use strict';
 (function(){
-'use strict'
-
 //Selección de elementos del HTML
-const modalTickets = document.querySelector('.Modal-tickets')
-const modalBtn = document.querySelector('.Modal-btn')
+const modalWork = document.querySelector('.Modal-work')
+const modalClose = document.querySelector('.Modal-close')
 const workForm = document.querySelector('.Work-form')
 
 //Crear función común
 const closeModal = () =>{
-    modalTickets.classList.remove('isOpen')
+    modalWork.classList.remove('isOpen')
 }
 
 //Añadir al btn de submit un listener
 workForm.addEventListener('submit' , (e) => {       //Submit al formulario que es quien devuelve el estado del form
         e.preventDefault()                          //Para evitar que el formulario se envíe y de error de página
-        modalTickets.classList.add('isOpen')
-        console.log(e)
+        modalWork.classList.add('isOpen')
     })
 
-modalBtn.addEventListener('click' , () =>{      //Cerrar el modal con el boton de cierre
+modalClose.addEventListener('click' , () =>{      //Cerrar el modal con el boton de cierre
         closeModal()
 })
 

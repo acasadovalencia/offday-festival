@@ -1,5 +1,5 @@
+'use strict';
 (function(){
-    'use strict'
     //Selección de elementos del HTML
     const lineupLis = document.querySelectorAll('.Lineup-li')
     const lineupImgs = document.querySelectorAll('.Lineup-img')
@@ -10,9 +10,6 @@
     const countdownMinutes = document.querySelector('.Countdown-minutes')
     const countdownSeconds = document.querySelector('.Countdown-seconds')
     
-    const closeModal = () =>{
-        modalTickets.classList.remove('isOpen')
-    }
     
     //Cuando el mouse entra en .Lineup-li, aplica estilos añadiendo la clase .isActive al .Lineup-li para cambiar su color y a .Lineup-img para volver visible la imagen
     lineupLis.forEach( (each , i)=>{

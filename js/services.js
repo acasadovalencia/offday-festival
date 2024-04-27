@@ -1,5 +1,5 @@
+'use strict';
 (function(){
-    'use strict'
     //Seleccionar los elementos con funciones
     const iconDown = document.querySelectorAll('.Icon-svg--down')
     const iconUp = document.querySelectorAll('.Icon-svg--up')

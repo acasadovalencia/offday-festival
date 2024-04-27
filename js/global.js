@@ -1,12 +1,12 @@
+'use strict';
 (function(){
-    'use strict'
     //Seleccion de elementos de HTML
     const menuBtn = document.querySelector('.Menu-btn')
     const btnClose = document.querySelector('.Btn-close')
     const headerNav = document.querySelector('.Header-nav')
     const btnTickets = document.querySelector('.Btn-tickets')
     const navLis = document.querySelectorAll('.Nav-li')
-    const modalTickets = document.querySelector('.Modal-tickets')
+    const modalSuscribe = document.querySelector('.Modal-suscribe')
     const modalBtn = document.querySelector('.Modal-btn')
     const footerForm = document.querySelector('.Footer-form')
 
@@ -49,7 +49,7 @@
 
     //Crear función común cerrar modal
     const closeModal = () =>{
-        modalTickets.classList.remove('isOpen')
+        modalSuscribe.classList.remove('isOpen')
     }
 
     menuBtn.addEventListener('click' , openMenu)    //Se ejecuta la funcion abrir menú al pulsar sobre el botón menú
@@ -62,10 +62,10 @@
         }
     })
 
-    //Añadir a cada Btn de compra un listener
+    //Cambiar el submit por un modal para que no rompa la página
     footerForm.addEventListener('submit' , (e) => {
         e.preventDefault()
-        modalTickets.classList.add('isOpen')
+        modalSuscribe.classList.add('isOpen')
     })
 
     modalBtn.addEventListener('click' , () =>{      //Cerrar el modal con el boton de cierre

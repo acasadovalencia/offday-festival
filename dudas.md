@@ -40,7 +40,7 @@ La casilla checkbok no ajusta su tamaño en iphone, solo en android
 
 # Error en img
 
-Al usar type="img/webp" da error indicando no usarlo en la etiqueta img. En clase vimos que se ponia.
+Al usar type="image/webp" da error indicando no usarlo en la etiqueta img. En clase vimos que se ponia.
 
 # Evitar traducción de la página
 

@@ -1,11 +1,11 @@
+'use strict';
 (function(){
-    'use strict'
     //Selección de elementos del HTML
     const iconsLis = document.querySelectorAll('.Icons-li')
     const ticketsSvgs = document.querySelectorAll('.Tickets-svg')
     const descriptionLis = document.querySelectorAll('.Description-li')
     const modalTickets = document.querySelector('.Modal-tickets')
-    const modalBtn = document.querySelector('.Modal-btn')
+    const modalClose = document.querySelector('.Modal-close')
     const ticketsBtns = document.querySelectorAll('.Btn--checkout')
 
     //Crear función común
@@ -34,7 +34,7 @@
         })
     })
 
-    modalBtn.addEventListener('click' , () =>{      //Cerrar el modal con el boton de cierre
+    modalClose.addEventListener('click' , () =>{      //Cerrar el modal con el boton de cierre
             closeModal()
     })
 
