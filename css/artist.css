@@ -61,7 +61,7 @@ body{
 .Article-picture{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
 }
 .Article-img{
