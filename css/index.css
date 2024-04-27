@@ -396,6 +396,11 @@ body {
     font-size: 1.5rem;
   }
 }
+@media (max-width:1024px){
+  .Section-lineup {
+  min-height: initial
+  }
+}
 @media (max-width: 882px) {
   .Tickets-ul{
     display: grid;
