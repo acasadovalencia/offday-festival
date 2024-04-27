@@ -1,0 +1,24 @@
+body{
+    background-color: var(--c-bg-secondary);
+    color: var(--c-f-secondary);
+}
+
+.Article-privacity{
+    margin: var(--mt-fix-header);
+}
+.Article-h2{
+    margin: 0 0 2.5rem;
+}
+.Article-h3{
+    margin: 1.5rem 0;
+}
+.Article-paragraph{
+    margin: 0 0 1rem;
+}
+.Article-ul{
+    padding: 0 1rem 0;
+}
+.Article-li{
+    margin: .5rem 0;
+}
+

@@ -72,13 +72,9 @@ body{
     gap: .5rem;
 }
 .Services-p-li::before{
-    content: "";
+    content: "-";
     display: block;
-    width: 4px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--c-f-secondary);
-}
+}   
 .Services-icon{
     cursor: pointer;
     position: relative;
