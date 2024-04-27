@@ -53,4 +53,7 @@ body{
         grid-template-columns: 1fr;
         align-self: center;
     }
+    .Grid-img{
+       padding: 3.5rem;    /*  Para corregir el pixelado de la imagen al no disponer de mayor tamaño */
+    }
 }
