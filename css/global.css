@@ -86,7 +86,7 @@ html{
 
     --c-divisor: #858585;
 
-    --mt-fix-header: 4.5rem 0 0;
+    --mt-fix-header: 4.5rem auto 0;
     --b-radius-btn: .2rem;
 
     font-size: 100%;
@@ -231,6 +231,8 @@ body{
 }
 .Wrapper {
     padding: 2.5rem 5rem 5rem;
+    max-width: 2200px;
+    margin: 0 auto;
   }
 .Menu-svg{
     fill: var(--c-f-primary);

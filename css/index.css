@@ -204,6 +204,12 @@ body {
 .Section-tickets{
     background-color: var(--c-bg-secondary);
     color: var(--c-f-secondary);
+    max-width: initial;
+}
+.Section-tickets--wrapper{
+  max-width: 2200px;
+  margin: 0 auto;
+  padding: 0 5rem;
 }
 .Tickets-h2{
   margin: 0 0 5rem
