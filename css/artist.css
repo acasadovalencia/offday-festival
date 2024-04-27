@@ -9,6 +9,7 @@ body{
 .Heading-img{
     width: 100%;
     object-fit: cover;
+    max-height: 60vh;
 }
 .Heading-social{
     width: 100%;
@@ -77,6 +78,9 @@ body{
         flex-direction: column-reverse;
         align-items: center;
         gap: 2rem;
+    }
+    .Article-picture {
+        justify-content: center;
     }
     .Article-text{
         width: 100%;
