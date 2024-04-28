@@ -398,12 +398,15 @@ body{
     justify-content: flex-start;
     align-items: center;
     gap: .25rem;
+    position: relative;
 }
 .Form-h4{
     font-size: 1.0625rem;
 }
-.Form-label{
-    display: none;
+.Footer-form > .Form-label{
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
 }
 .Form-input{
     background-color: var(--c-bg-secondary);
