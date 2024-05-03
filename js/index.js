@@ -10,29 +10,6 @@
     const countdownMinutes = document.querySelector('.Countdown-minutes')
     const countdownSeconds = document.querySelector('.Countdown-seconds')
     
-    
-    //Cuando el mouse entra en .Lineup-li, aplica estilos añadiendo la clase .isActive al .Lineup-li para cambiar su color y a .Lineup-img para volver visible la imagen
-    lineupLis.forEach( (each , i)=>{
-        lineupLis[i].addEventListener('mouseover' , ()=>{
-            lineupLis[i].classList.add('isActive')
-            lineupImgs[i].classList.add('isActive')
-        })
-    //Al salir el mouse remueve las clases aplicadas y vuelve su por defecto.
-        lineupLis[i].addEventListener('mouseout' , ()=>{
-            lineupLis[i].classList.remove('isActive')
-            lineupImgs[i].classList.remove('isActive')
-    
-        })
-    })
-    
-    //Listener para parar la marquesina .Marquee-ul al entrar con el mouse aplicando una clase CSS que detiene el translate.
-    marqueeUl.addEventListener('mouseover' , ()=> marqueeUl.classList.remove('isMoving'))
-    marqueeUl.addEventListener('mouseout' , ()=> marqueeUl.classList.add('isMoving'))
-    
-    //Listener para parar la marquesina .Slide-ul al entrar con el mouse aplicando una clase CSS que detiene el translate.
-    slideUl.addEventListener('mouseover' , ()=> slideUl.classList.remove('isMoving'))
-    slideUl.addEventListener('mouseout' , ()=> slideUl.classList.add('isMoving'))
-    
     //Funcion para realizar una cuenta atras hasta la fecha de inicio
     function countdown(){
         const startDate = new Date('2024-06-16 20:00:00').getTime() //Guardar fecha de inicio del evento
@@ -58,20 +35,30 @@
         countdownSeconds.innerHTML = secondsLeft
     }
     
+    //Cuando el mouse entra en .Lineup-li, aplica estilos añadiendo la clase .isActive al .Lineup-li para cambiar su color y a .Lineup-img para volver visible la imagen
+    lineupLis.forEach( (each , i)=>{
+        lineupLis[i].addEventListener('mouseover' , ()=>{
+            lineupLis[i].classList.add('isActive')
+            lineupImgs[i].classList.add('isActive')
+        })
+    //Al salir el mouse remueve las clases aplicadas y vuelve su por defecto.
+        lineupLis[i].addEventListener('mouseout' , ()=>{
+            lineupLis[i].classList.remove('isActive')
+            lineupImgs[i].classList.remove('isActive')
+    
+        })
+    })
+    
+    //Listener para parar la marquesina .Marquee-ul al entrar con el mouse aplicando una clase CSS que detiene el translate.
+    marqueeUl.addEventListener('mouseover' , ()=> marqueeUl.classList.remove('isMoving'))
+    marqueeUl.addEventListener('mouseout' , ()=> marqueeUl.classList.add('isMoving'))
+    
+    //Listener para parar la marquesina .Slide-ul al entrar con el mouse aplicando una clase CSS que detiene el translate.
+    slideUl.addEventListener('mouseover' , ()=> slideUl.classList.remove('isMoving'))
+    slideUl.addEventListener('mouseout' , ()=> slideUl.classList.add('isMoving'))
+    
     //Ejecutar la función countdown cada segundo para que se actualice el HTML en relación al tiempo actual.
     setInterval(countdown, 1000)
-    
-    
-    // const sectionSpecial = document.querySelector('.Section-special')
-    // const scrollSlider = document.querySelector('.Scroll-slider')
-    
-    // window.addEventListener('scroll' , () => {
-    //     let pxTop = sectionSpecial.getBoundingClientRect().top
-    //     let px = window.scrollY
-    //     scrollSlider.style.transform = `translateX(-${pxTop - px}px)`
-    //     console.log(pxTop - px)
-    // })
-
 })()
 
 
