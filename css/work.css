@@ -107,15 +107,21 @@ body {
   gap: 2px;
   margin: 0 2px 0 0;
 }
-.Checkbox::after {
+.Label-span{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-items: flex-start;
+  align-items: flex-start;
+  gap: .2rem;
+}
+.Label-span::before {
   content: "*";
   display: block;
   font-size: 0.7rem;
   color: var(--c-f-required);
 }
 .Checkbox-svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 5rem;
 }
 .Work-input + .Work-label .Checkbox-svg--checked {
   display: none;
@@ -213,8 +219,7 @@ body {
   }
 }
 @media (max-width: 580px) {
-  .Checkbox-svg {
-    width: 3rem;
-    height: 3rem;
+   .Checkbox-svg {
+    width: 15rem;
   }
 }
