@@ -260,7 +260,7 @@ body {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
   z-index: 1;
 }
 .Tickets-svg {
@@ -387,7 +387,7 @@ body {
     width: 400%;
   }
 }
-@media (max-width: 1090px) {
+@media (max-width: 1200px) {
   .Tickets-li {
     gap: 1rem;
   }
@@ -402,9 +402,29 @@ body {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 1048px){
+  .Tickets-wrapper {
+    gap: .5rem;
+  }
+  .Tickets-text {
+    gap: .5rem;
+  }
+  .Tickets-h3 {
+    font-size: 1rem;
+  }
+  .Tickets-price {
+    font-size: 1.2rem;
+  }
+}
 @media (max-width: 1024px) {
   .Section-lineup {
     min-height: initial;
+  }
+}
+@media (max-width: 932px){
+  .Tickets-li:last-child .Tickets-h3 {
+    font-size: .8rem;
+    text-align: center;
   }
 }
 @media (max-width: 882px) {
@@ -426,6 +446,15 @@ body {
   .Tickets-wrapper {
     flex-direction: column;
     padding: 1rem 0;
+  }
+  .Tickets-h3 {
+    font-size: 1.5rem;
+  }
+  .Tickets-li:last-child .Tickets-h3 {
+    font-size: 1.5rem;
+  }
+  .Tickets-price {
+    font-size: 1.5rem;
   }
   .Tickets-text {
     flex-direction: column;
