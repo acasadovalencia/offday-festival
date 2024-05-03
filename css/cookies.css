@@ -2,7 +2,6 @@ body{
     background-color: var(--c-bg-secondary);
     color: var(--c-f-secondary);
 }
-
 .Article-cookies{
     margin: var(--mt-fix-header);
 }

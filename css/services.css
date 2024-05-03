@@ -56,14 +56,12 @@ body{
     left: 0;
     opacity: 0;
     pointer-events: none;
-    /* transform: translateY(-100%); */
-    transition: transform 1s ease , max-height 2s ease;
+    transition: max-height 2s ease;
     max-height: 0;
 }
 .Services-paragraph.isActive{
     position: relative;
     pointer-events: auto;
-    /* transform: translateY(0%); */
     opacity: 1;
     max-height: 1000px;
 }
@@ -84,10 +82,9 @@ body{
 }
 .Icon-svg{
     width: 1rem;
+    position: absolute;
     top: calc(1.2188rem - .5rem);
     right: 0;
-
-    position: absolute;
 }
 .Icon-svg--up{
     opacity: 0;

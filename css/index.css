@@ -172,7 +172,7 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 0.75rem;
-  padding: 0 0 .75rem;
+  padding: 0 0 0.75rem;
   margin: 0 auto;
 }
 .Images-li {
@@ -201,20 +201,20 @@ body {
 .Images-img:hover {
   transform: scale(1);
 }
-.Section-tickets{
-    background-color: var(--c-bg-secondary);
-    color: var(--c-f-secondary);
-    max-width: initial;
+.Section-tickets {
+  background-color: var(--c-bg-secondary);
+  color: var(--c-f-secondary);
+  max-width: initial;
 }
-.Section-tickets--wrapper{
+.Section-tickets--wrapper {
   max-width: 2200px;
   margin: 0 auto;
   padding: 0 5rem;
 }
-.Tickets-h2{
-  margin: 0 0 5rem
+.Tickets-h2 {
+  margin: 0 0 5rem;
 }
-.Tickets-ul{
+.Tickets-ul {
   color: var(--c-f-primary);
   display: flex;
   flex-flow: column nowrap;
@@ -222,7 +222,7 @@ body {
   align-items: center;
   gap: 1.5rem;
 }
-.Tickets-li{
+.Tickets-li {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -233,29 +233,28 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
-.Tickets-li::after{
+.Tickets-li::after {
   content: "";
   display: block;
   width: 200%;
-  height: .3125rem;
+  height: 0.3125rem;
   background-color: var(--c-bg-secondary);
   position: absolute;
-  top:-25rem;
+  top: -25rem;
   left: -6.25rem;
   transform: rotate(-15deg);
-  filter: blur(.625rem);
-  transition: top .3s linear;
-
+  filter: blur(0.625rem);
+  transition: top 0.3s linear;
 }
-.Tickets-li:hover{
-  transform: scale(1.05);  
+.Tickets-li:hover {
+  transform: scale(1.05);
 }
-.Tickets-li:hover::after{
+.Tickets-li:hover::after {
   top: 8.125rem;
 }
-.Tickets-wrapper{
+.Tickets-wrapper {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -263,10 +262,10 @@ body {
   gap: 5rem;
   z-index: 1;
 }
-.Tickets-svg{
+.Tickets-svg {
   width: 7.75rem;
 }
-.Tickets-text{
+.Tickets-text {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -274,23 +273,23 @@ body {
   gap: 1rem;
   padding: 1.875rem 0;
 }
-.Tickets-price{
+.Tickets-price {
   font-size: 2rem;
   font-weight: 600;
 }
-.Tickets-btn{
-  padding: .375rem 1rem;
-  font-size: .875rem;
+.Tickets-btn {
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
   z-index: 1;
 }
-.Tickets-picture{
+.Tickets-picture {
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
   height: 100%;
 }
-.Tickets-picture::after{
+.Tickets-picture::after {
   content: "";
   display: block;
   position: absolute;
@@ -298,38 +297,38 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,.2));
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
 }
-.Tickets-img{
+.Tickets-img {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.Special-h2{
+.Special-h2 {
   padding: 0 0 5rem;
 }
-.Special-ul{
+.Special-ul {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-content: center;
   gap: 5rem;
 }
-.Special-article{
+.Special-article {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
 }
-.Special-article--reverse{
+.Special-article--reverse {
   flex-direction: row-reverse;
 }
-.Special-img{
+.Special-img {
   object-fit: cover;
 }
-.Info-wrapper{
+.Info-wrapper {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
@@ -387,51 +386,55 @@ body {
     width: 400%;
   }
 }
-@media (max-width:1090px){
-  .Tickets-li{
+@media (max-width: 1090px) {
+  .Tickets-li {
     gap: 1rem;
   }
-  .Tickets-wrapper{
+  .Tickets-wrapper {
     gap: 1rem;
   }
-  .Tickets-h3{
+  .Tickets-h3 {
     font-size: 1.5rem;
     text-align: center;
   }
-  .Tickets-price{
+  .Tickets-price {
     font-size: 1.5rem;
   }
 }
-@media (max-width:1024px){
+@media (max-width: 1024px) {
   .Section-lineup {
-  min-height: initial
+    min-height: initial;
   }
 }
 @media (max-width: 882px) {
-  .Tickets-ul{
+  .Tickets-ul {
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  .Tickets-li{
+  .Tickets-li {
     flex-direction: column;
     width: 100%;
     padding: 0 1rem 1.5rem;
   }
-  .Tickets-li::after{
+  .Tickets-li::after {
     display: none;
   }
-  .Tickets-svg{
+  .Tickets-svg {
     width: 10rem;
   }
-  .Tickets-wrapper{
+  .Tickets-wrapper {
     flex-direction: column;
     padding: 1rem 0;
   }
-  .Tickets-text{
+  .Tickets-text {
     flex-direction: column;
   }
-  .Tickets-picture::after{
-    background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,.2));
+  .Tickets-picture::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.2)
+    );
   }
   .Slide-ul {
     width: 500%;
@@ -444,23 +447,22 @@ body {
   .Landscape-image {
     grid-column: span 6;
   }
-  .Tickets-ul{
+  .Tickets-ul {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-  .Tickets-li{
+  .Tickets-li {
     width: 50%;
   }
-  .Special-article{
+  .Special-article {
     flex-direction: column;
   }
-  .Info-wrapper{
+  .Info-wrapper {
     width: 100%;
   }
 }
 @media (max-width: 680px) {
-
-  .Lineup-ul{
+  .Lineup-ul {
     padding: 5rem 0;
   }
   .Slide-ul {
@@ -473,11 +475,11 @@ body {
   .Section-countdown {
     padding: 5rem 0rem;
   }
-  .Tickets-h2{
+  .Tickets-h2 {
     padding: 0 0 2.5rem;
     margin: 0;
   }
-  .Tickets-li{
+  .Tickets-li {
     width: 70%;
   }
 }
@@ -505,10 +507,10 @@ body {
   .Section-lineup {
     height: auto;
   }
-  .Lineup-wrapper{
+  .Lineup-wrapper {
     padding: 0 0 2.5rem;
   }
-  .Lineup-picture{
+  .Lineup-picture {
     display: none;
   }
   .Lineup-li::after {
@@ -520,53 +522,42 @@ body {
   .Large-image {
     grid-column: span 6;
   }
-  .Section-tickets--wrapper{
+  .Section-tickets--wrapper {
     padding: 2.5rem 1rem;
-}
-  .Tickets-li{
+  }
+  .Tickets-li {
     width: 100%;
   }
-  .Tickets-h3{
+  .Tickets-h3 {
     font-size: 2rem;
   }
-  .Tickets-price{
+  .Tickets-price {
     font-size: 2rem;
   }
-  @media(max-width:460px) {
-    .Slide-ul {
-      width: 800%;
-    }
-    .Main-logo {
-      width: 15rem;
-      height: 20rem;
-      top: calc(50% - (15rem / 2));
-      left: calc(50% - (20rem / 2));
-    }
-    .Marquee-ul {
-      width: 600%;
-      font-size: 6vw;
-    }
+}
+@media (max-width: 460px) {
+  .Slide-ul {
+    width: 800%;
   }
-  @media(max-width:400px){
-    .Tickets-h3{
-      font-size: 1.5rem;
-    }
-    .Tickets-price{
-      font-size: 1.5rem;
-    }
-    .Countdown-span:last-child {
-      font-size: 1rem;
+  .Main-logo {
+    width: 15rem;
+    height: 20rem;
+    top: calc(50% - (15rem / 2));
+    left: calc(50% - (20rem / 2));
   }
+  .Marquee-ul {
+    width: 600%;
+    font-size: 6vw;
   }
-  /* @media(max-width:420px){
-    .Countdown-ul {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .Countdown-li::after{
-        display: none;
-    }
-} */
+}
+@media (max-width: 400px) {
+  .Tickets-h3 {
+    font-size: 1.5rem;
+  }
+  .Tickets-price {
+    font-size: 1.5rem;
+  }
+  .Countdown-span:last-child {
+    font-size: 1rem;
+  }
 }
