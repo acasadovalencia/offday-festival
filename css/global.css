@@ -381,6 +381,8 @@ body{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 3000px;
+    margin: 0 auto;
 }
 .Footer-svg{
     width: 7.375rem;
