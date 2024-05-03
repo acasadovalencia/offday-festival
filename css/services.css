@@ -99,7 +99,7 @@ body{
     pointer-events: none;
 }
 .Icon-svg--down.isActive{
-    opacity: 1;
+    opacity: 1; 
     pointer-events: auto;
 }
 @media(max-width:580px){

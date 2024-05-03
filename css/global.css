@@ -277,7 +277,7 @@ body{
     cursor: pointer;
     z-index: 6;
     opacity: 0;
-    pointer-events: all;
+    pointer-events: none;
     transform: rotate(0);
     transition: opacity 1s ease, transform 1s linear , fill .5s ease;
 }
