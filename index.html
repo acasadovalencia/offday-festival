@@ -158,13 +158,16 @@
     <main class="Main">
       <div class="Video-wrapper">
         <video
-          src="assets/video/main-video-offday.mp4"
           class="Main-video"
           loop
           autoplay
           muted
           playsinline
-        ></video>
+          poster="assets/video/main-video-offday-poster.jpg"
+        >
+          <source src="assets/video/main-video-offday.mp4" type="video/mp4">
+          <source src="assets/video/main-video-offday.webm" type="video/webm">
+        </video>
         <div class="Main-logo">
           <svg
             class="Main-logo-svg"
