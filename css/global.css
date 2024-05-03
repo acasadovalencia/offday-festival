@@ -198,7 +198,7 @@ body{
     transition-delay: .1s;
 }
 .Li-work.navDown{
-    transition-delay: 0;
+    transition-delay: 0s;
 }
 .Nav-li:hover{
     color: var(--c-f-tertiary);
@@ -451,7 +451,7 @@ body{
 }
 .Span-copy{
     display: flex;
-    flex-flow: row row-reverse;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-end;
     font-size: .75rem;
