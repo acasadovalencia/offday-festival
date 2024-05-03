@@ -121,7 +121,7 @@ body {
   color: var(--c-f-required);
 }
 .Checkbox-svg {
-  width: 5rem;
+  max-width: 5rem;
 }
 .Work-input + .Work-label .Checkbox-svg--checked {
   display: none;
