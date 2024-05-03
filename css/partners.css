@@ -8,7 +8,7 @@ body{
 .Grid-partners{
     display: grid;
     grid-template-columns: repeat(5 , 1fr);
-    gap: 24px;
+    gap: 1.5rem;
     margin: 0 auto;
     padding: 2.5rem 0 0;
     max-width: 1200px;

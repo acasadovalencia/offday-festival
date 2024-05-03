@@ -43,7 +43,7 @@ body{
 }
 .Services-h3{
     font-size: 1.5rem;
-    padding: 8px 0 0;
+    padding: .5rem 0 0;
     cursor: pointer;
 }
 .Services-paragraph--wrapper{

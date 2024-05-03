@@ -177,10 +177,10 @@ body{
         transform: translateY(0);
     }
     35% {
-        transform: translateX(-7px);
+        transform: translateX(-0.4375rem);
     }
     65% {
-        transform: translateX(-3.5px);
+        transform: translateX(-0.2188rem);
     }
 }
 @media(max-width:1030px){
