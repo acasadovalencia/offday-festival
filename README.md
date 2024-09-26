@@ -1,6 +1,9 @@
-<div align="center">
-<h1>OFFDay Festival website project</h1>
-<h2>Esta web ha sido creada como proyecto final para el módulo Diseño web con HTML, CSS y JavaScript en la escuela CEI.</h2>
+# OFFday festival Website
+
+Website made with HTML, CSS & JavaScript.
+
+[![Live Site](https://img.shields.io/static/v1?label=&message=Live%20Site&color=0ABF53&style=for-the-badge)](https://acasadovalencia.github.io/offday-festival/)
+[![Github Repository](https://img.shields.io/static/v1?label=&message=Github%20Repository&color=0ABF53&style=for-the-badge&logo=github&logoColor=white)](https://github.com/acasadovalencia/offday-festival.git)
 
 <img src="assets/img/meta-logo.png" alt="OFFDay logo" width="424" height="209"/>
 
@@ -14,4 +17,3 @@
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="80" height="80"/> 
     </a>
-</div>
