@@ -12,7 +12,7 @@
     
     //Funcion para realizar una cuenta atras hasta la fecha de inicio
     function countdown(){
-        const startDate = new Date('2024-06-16 20:00:00').getTime() //Guardar fecha de inicio del evento
+        const startDate = new Date('2025-06-16 20:00:00').getTime() //Guardar fecha de inicio del evento
         const actualDate = new Date().getTime() // Guarda la fecha actual
         const timeLeft = startDate - actualDate //Cálculo para obtener el tiempo restante al inicio del evento.
         
